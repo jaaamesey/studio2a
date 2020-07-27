@@ -9,7 +9,7 @@ function App({}: AppProps) {
   const [result, setResult] = React.useState('');
   React.useEffect(() => {
     axios
-      .get('127.0.0.1:9000/memes')
+      .get('http://127.0.0.1:9000/memes')
       .then((res) => {
         setResult('Connected to server successfully.');
       })
