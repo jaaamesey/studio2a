@@ -3,14 +3,12 @@ import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
-interface AppProps {}
-
-function App({}: AppProps) {
+function App(): React.ReactElement {
   const [result, setResult] = React.useState('');
   React.useEffect(() => {
     axios
       .get('http://127.0.0.1:9000/memes')
-      .then((res) => {
+      .then(() => {
         setResult('Connected to server successfully.');
       })
       .catch((err) => {
