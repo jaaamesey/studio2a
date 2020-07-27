@@ -3,7 +3,7 @@ import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
 
-function App(): React.ReactElement {
+const App: React.FC = () => {
   const [result, setResult] = React.useState('');
   React.useEffect(() => {
     axios
@@ -34,6 +34,6 @@ function App(): React.ReactElement {
       </header>
     </div>
   );
-}
+};
 
 export default App;
