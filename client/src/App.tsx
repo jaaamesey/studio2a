@@ -14,7 +14,7 @@ const App: React.FC = () => {
       .catch((err) => {
         setResult(err.toString());
       });
-  });
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
