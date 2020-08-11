@@ -8,7 +8,6 @@
   "dockerFile": "..\\Dockerfile.development",
   // Set *default* container specific settings.json values on container create.
   "settings": {
-    "terminal.integrated.shell.linux": null,
     "files.eol": "\n",
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -20,9 +19,10 @@
     "dbaeumer.vscode-eslint",
     "naumovs.color-highlight",
     "christian-kohler.path-intellisense"
-  ]
+  ],
+  "appPort": 8080,
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
+  "forwardPorts": [8080]
   // Uncomment the next line to run commands after the container is created - for example installing curl.
   // "postCreateCommand": "apt-get update && apt-get install -y curl",
   // Uncomment when using a ptrace-based debugger like C++, Go, and Rust
