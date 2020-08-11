@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.128.0/containers/docker-existing-dockerfile
 {
-  "name": "Existing Dockerfile",
+  "name": "Client (Development)",
   // Sets the run context to one level up instead of the .devcontainer folder.
   "context": "..",
   // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
@@ -18,13 +18,14 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "naumovs.color-highlight",
-    "christian-kohler.path-intellisense"
+    "christian-kohler.path-intellisense",
+    "ms-azuretools.vscode-docker"
   ],
-  "appPort": 8080
+  "appPort": 8080,
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   //"forwardPorts": [8080]
   // Uncomment the next line to run commands after the container is created - for example installing curl.
-  // "postCreateCommand": "apt-get update && apt-get install -y curl",
+  "postCreateCommand": "npm install"
   // Uncomment when using a ptrace-based debugger like C++, Go, and Rust
   // "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
   // Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
