@@ -6,14 +6,17 @@ export const RegistrationPage: React.FC = () => {
     <div className="form-div">
       <form action="" id="registration-form">
         <h2>Sign up</h2>
-        <label htmlFor="first_name">First Name</label>
-        <br />
-        <input type="text" size={20} name="first_name" required />
-        <br />
+        <div className="regist-name-divs">
+          <label htmlFor="first_name">First Name</label>
+          <br />
+          <input type="text" size={20} name="first_name" required />
+        </div>
 
-        <label htmlFor="last_name">Last Name</label>
-        <br />
-        <input type="text" size={20} name="last_name" required />
+        <div className="regist-name-divs">
+          <label htmlFor="last_name">Last Name</label>
+          <br />
+          <input type="text" size={20} name="last_name" required />
+        </div>
         <br />
 
         <label htmlFor="email">Email</label>

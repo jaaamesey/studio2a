@@ -5,7 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../res/css/style.css';
 
 import { NavigationBar } from './nav';
-import { HomePage, TestPage, TestPage2, RegistrationPage } from './pages';
+import {
+  HomePage,
+  TestPage,
+  TestPage2,
+  RegistrationPage,
+  LoginPage,
+} from './pages';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +29,9 @@ const App: React.FC = () => {
         </Route>
         <Route path="/registration">
           <RegistrationPage />
+        </Route>
+        <Route path="/login">
+          <LoginPage />
         </Route>
       </Switch>
     </Router>
