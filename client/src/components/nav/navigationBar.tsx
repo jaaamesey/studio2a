@@ -15,6 +15,9 @@ export const NavigationBar: React.FC = () => {
         <Link to="/test-2" className="nav-link">
           Test 2
         </Link>
+        <Link to="/registration" className="nav-link">
+          Sign Up
+        </Link>
       </Nav>
     </Navbar>
   );
