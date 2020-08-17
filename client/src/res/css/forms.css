@@ -18,9 +18,13 @@
   line-height: 2em;
 }
 
-.regist-name-divs {
+.firstname-div,
+.lastname-div {
   display: inline-block;
-  margin: 0 0.3em;
+}
+
+.firstname-div {
+  margin-right: 0.5em;
 }
 
 button {
