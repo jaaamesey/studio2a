@@ -17,5 +17,5 @@ services:
       context: ./database
       dockerfile: Dockerfile
     ports:
-    - "5432:5432"
+    - "5420:5432"
 
