@@ -21,6 +21,9 @@ export const NavigationBar: React.FC = () => {
         <Link to="/login" className="nav-link">
           Sign In
         </Link>
+        <Link to="/recommendationlist" className="nav-link">
+          Recommendation List (Test)
+        </Link>
       </Nav>
     </Navbar>
   );
