@@ -17,5 +17,5 @@ services:
       context: ./database
       dockerfile: Dockerfile
     ports:
-    - "5420:5432"
+    - "5420:5432" # Port 5432 might be used by other things on your PC, so it's been remapped to 5420
 
