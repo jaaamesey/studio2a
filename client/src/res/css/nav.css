@@ -1,0 +1,17 @@
+.bg-light {
+  background: #ebebeb !important;
+}
+
+.mr-auto {
+  width: 100%;
+}
+
+.nav-link {
+  font-family: Arial;
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  border-bottom: 0.3em solid #0f4beb;
+}
