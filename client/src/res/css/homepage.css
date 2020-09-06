@@ -1,0 +1,51 @@
+.carousel-container {
+  width: fit-content;
+  position: relative;
+}
+
+.carousel-control {
+  visibility: hidden;
+}
+
+.carousel-btn {
+  background-color: #0f4beb;
+}
+
+.carousel-caption {
+  text-align: right;
+}
+
+@media screen and (min-width: 1000px) {
+  .carousel-caption h3 {
+    font-size: 60px;
+  }
+  .carousel-caption h4 {
+    font-size: 45px;
+  }
+
+  .carousel-caption p {
+    font-size: 25px;
+  }
+  .carousel-caption {
+    top: 20%;
+    bottom: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .carousel-caption h3 {
+    font-size: 20px;
+  }
+
+  .carousel-caption h4 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 15px;
+  }
+
+  .carousel-btn {
+    font-size: 12px;
+  }
+}
