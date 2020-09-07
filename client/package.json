@@ -13,6 +13,9 @@
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
     "react": "^16.13.1",
@@ -36,7 +39,7 @@
     "eslint-plugin-react-hooks": "^4.0.8",
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
-    "snowpack": "^2.7.7",
+    "snowpack": "^2.9.0",
     "typescript": "^3.9.7"
   }
 }
