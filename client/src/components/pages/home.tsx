@@ -6,7 +6,6 @@ import Image2 from '../../res/img/Picture2.png';
 import Image3 from '../../res/img/Picture3.png';
 
 export const HomePage: React.FC = () => {
-  console.log(23);
   return (
     <div>
       <Carousel
