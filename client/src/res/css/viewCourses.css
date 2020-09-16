@@ -2,7 +2,7 @@
   color: white;
   background-color: #323232;
   border-radius: 10px;
-
+  height: fit-content;
   padding: 3em;
 }
 
@@ -36,4 +36,17 @@
 }
 .faculty-courses-head p {
   padding-bottom: 1em;
+}
+
+.faculty-accordion {
+  padding: 2em;
+  padding-top: 2.5em;
+}
+
+.faculty-accordion-toggle {
+  padding-left: 40px;
+}
+
+.faculty-accordion-card:hover {
+  cursor: pointer;
 }

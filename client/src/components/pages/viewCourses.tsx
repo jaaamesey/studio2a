@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Container, Col, Row } from 'react-bootstrap';
-import { FacultyTab } from '../nav';
 import '../../res/css/viewCourses.css';
 import '../../res/css/tables.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Container, Col, Row, Accordion, Card } from 'react-bootstrap';
+import { FacultyTab } from '../nav';
 
 export const ViewCourses: React.FC = () => {
   return (
@@ -28,6 +28,38 @@ export const ViewCourses: React.FC = () => {
                         industry and the community.
                       </p>
                     </div>
+                    <div className="faculty-accordion">
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="0"
+                            className="faculty-accordion-toggle"
+                          >
+                            Communication
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="1"
+                            className="faculty-accordion-toggle"
+                          >
+                            International Studies and Education
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                    </div>
                   </Container>
                 </Route>
                 <Route path="/viewCourses/business">
@@ -39,6 +71,84 @@ export const ViewCourses: React.FC = () => {
                         thinking for next generation leaders in a globalising
                         world.
                       </p>
+                    </div>
+                    <div className="faculty-accordion">
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="0"
+                            className="faculty-accordion-toggle"
+                          >
+                            Accouting
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="1"
+                            className="faculty-accordion-toggle"
+                          >
+                            Economics
+                          </Accordion.Toggle>
+
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="2"
+                            className="faculty-accordion-toggle"
+                          >
+                            Finance
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="2">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="3"
+                            className="faculty-accordion-toggle"
+                          >
+                            Management
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="3">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="4"
+                            className="faculty-accordion-toggle"
+                          >
+                            Marketing
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="4">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
                     </div>
                   </Container>
                 </Route>
@@ -54,6 +164,54 @@ export const ViewCourses: React.FC = () => {
                         professions.
                       </p>
                     </div>
+                    <div className="faculty-accordion">
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="0"
+                            className="faculty-accordion-toggle"
+                          >
+                            Design
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="1"
+                            className="faculty-accordion-toggle"
+                          >
+                            Architecture
+                          </Accordion.Toggle>
+
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="2"
+                            className="faculty-accordion-toggle"
+                          >
+                            Built Environment
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="2">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                    </div>
                   </Container>
                 </Route>
                 <Route path="/viewCourses/engineering-and-it">
@@ -67,6 +225,39 @@ export const ViewCourses: React.FC = () => {
                         information technology professionals.
                       </p>
                     </div>
+                    <div className="faculty-accordion">
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="0"
+                            className="faculty-accordion-toggle"
+                          >
+                            Engineering
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="1"
+                            className="faculty-accordion-toggle"
+                          >
+                            Information Technology
+                          </Accordion.Toggle>
+
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                    </div>
                   </Container>
                 </Route>
                 <Route path="/viewCourses/health">
@@ -78,6 +269,144 @@ export const ViewCourses: React.FC = () => {
                         education and research in a broad range of health
                         disciplines.
                       </p>
+                    </div>
+                    <div className="faculty-accordion">
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="0"
+                            className="faculty-accordion-toggle"
+                          >
+                            Diabetes
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="1"
+                            className="faculty-accordion-toggle"
+                          >
+                            Health Science
+                          </Accordion.Toggle>
+
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="2"
+                            className="faculty-accordion-toggle"
+                          >
+                            Health Services Management
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="2">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="3"
+                            className="faculty-accordion-toggle"
+                          >
+                            High Performance Sport
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="3">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="4"
+                            className="faculty-accordion-toggle"
+                          >
+                            Midwifery
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="4">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="5"
+                            className="faculty-accordion-toggle"
+                          >
+                            Nursing
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="5">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="6"
+                            className="faculty-accordion-toggle"
+                          >
+                            Paliative Care
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="6">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="7"
+                            className="faculty-accordion-toggle"
+                          >
+                            Public Health
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="7">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="8"
+                            className="faculty-accordion-toggle"
+                          >
+                            Sport and Exercise
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="8">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
                     </div>
                   </Container>
                 </Route>
@@ -103,6 +432,38 @@ export const ViewCourses: React.FC = () => {
                         teaching and research.
                       </p>
                     </div>
+                    <div className="faculty-accordion">
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="0"
+                            className="faculty-accordion-toggle"
+                          >
+                            Life Sciences
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="1"
+                            className="faculty-accordion-toggle"
+                          >
+                            Mathematical and Physical Sciences
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                    </div>
                   </Container>
                 </Route>
                 <Route path="/viewCourses/graduate-school-of-health">
@@ -118,6 +479,114 @@ export const ViewCourses: React.FC = () => {
                         foundational pillars which drive us to be innovators in
                         the health profession.
                       </p>
+                    </div>
+                    <div className="faculty-accordion">
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="0"
+                            className="faculty-accordion-toggle"
+                          >
+                            Clinical Psychology
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="0">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="1"
+                            className="faculty-accordion-toggle"
+                          >
+                            Health Policy
+                          </Accordion.Toggle>
+
+                          <Accordion.Collapse eventKey="1">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="2"
+                            className="faculty-accordion-toggle"
+                          >
+                            Orthoptics
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="2">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="3"
+                            className="faculty-accordion-toggle"
+                          >
+                            Pharmacy
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="3">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="4"
+                            className="faculty-accordion-toggle"
+                          >
+                            Physiotherapy
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="4">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="5"
+                            className="faculty-accordion-toggle"
+                          >
+                            Genetic Counselling
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="5">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                      <Accordion>
+                        <Card className="faculty-accordion-card">
+                          <Accordion.Toggle
+                            as={Card.Header}
+                            variant="link"
+                            eventKey="6"
+                            className="faculty-accordion-toggle"
+                          >
+                            Speech Pathology
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey="6">
+                            <Card.Body>Hello! Im the body</Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
                     </div>
                   </Container>
                 </Route>
