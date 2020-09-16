@@ -13,6 +13,7 @@ import {
   RegistrationPage,
   LoginPage,
   RecommendationList,
+  ViewCourses,
 } from './pages';
 
 const App: React.FC = () => {
@@ -26,8 +27,8 @@ const App: React.FC = () => {
         <Route path="/test">
           <TestPage />
         </Route>
-        <Route path="/test-2">
-          <TestPage2 />
+        <Route path="/viewCourses">
+          <ViewCourses />
         </Route>
         <Route path="/registration">
           <RegistrationPage />

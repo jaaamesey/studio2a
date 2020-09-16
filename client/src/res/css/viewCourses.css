@@ -1,0 +1,39 @@
+.tab-faculty-panel {
+  color: white;
+  background-color: #323232;
+  border-radius: 10px;
+
+  padding: 3em;
+}
+
+.tab-title {
+  padding: 1em;
+  font-weight: bold;
+  align-content: center;
+}
+
+.tab-faculty {
+  padding: 0.5em;
+}
+
+.tab-link {
+  color: white;
+}
+
+.tab-link:hover {
+  color: white;
+}
+
+.faculty-courses {
+  padding: 3em;
+}
+.faculty-courses-head {
+  border-bottom: 0.2em solid black;
+}
+
+.faculty-courses-head h2 {
+  padding-bottom: 0.5em;
+}
+.faculty-courses-head p {
+  padding-bottom: 1em;
+}
