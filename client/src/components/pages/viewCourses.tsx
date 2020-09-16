@@ -2,7 +2,7 @@ import React from 'react';
 import '../../res/css/viewCourses.css';
 import '../../res/css/tables.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Container, Col, Row, Accordion, Card } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 import { FacultyTab } from '../nav';
 
 export const ViewCourses: React.FC = () => {
@@ -28,37 +28,115 @@ export const ViewCourses: React.FC = () => {
                         industry and the community.
                       </p>
                     </div>
-                    <div className="faculty-accordion">
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="0"
-                            className="faculty-accordion-toggle"
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Communication
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="1"
-                            className="faculty-accordion-toggle"
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            International Studies and Education
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li>Doctor of Philosophy</li>
+                        <li>Master of Arts (research)</li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -72,83 +150,30 @@ export const ViewCourses: React.FC = () => {
                         world.
                       </p>
                     </div>
-                    <div className="faculty-accordion">
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="0"
-                            className="faculty-accordion-toggle"
-                          >
-                            Accouting
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="1"
-                            className="faculty-accordion-toggle"
-                          >
-                            Economics
-                          </Accordion.Toggle>
-
-                          <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="2"
-                            className="faculty-accordion-toggle"
-                          >
-                            Finance
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="2">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="3"
-                            className="faculty-accordion-toggle"
-                          >
-                            Management
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="3">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="4"
-                            className="faculty-accordion-toggle"
-                          >
-                            Marketing
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="4">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>Bachelor of Accounting</li>
+                        <li>Bachelor of Accounting (Honours)</li>
+                        <li> Bachelor of Business</li>
+                        <li>Bachelor of Business (Honours)</li>
+                        <li>Bachelor of Business Administration</li>
+                        <li>Bachelor of Economics</li>
+                        <li>Bachelor of Entrepreneurship (Honours)</li>
+                        <li>Bachelor of Management (Honours)</li>
+                      </ul>
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li>Doctor of Philosophy</li>
+                        <li>Master of Business (Research)</li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li>Master of Business Administration</li>
+                        <li>Master of Finance</li>
+                        <li>MAster of Human Resource Management</li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -164,53 +189,117 @@ export const ViewCourses: React.FC = () => {
                         professions.
                       </p>
                     </div>
-                    <div className="faculty-accordion">
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="0"
-                            className="faculty-accordion-toggle"
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Design
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="1"
-                            className="faculty-accordion-toggle"
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Architecture
-                          </Accordion.Toggle>
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
 
-                          <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="2"
-                            className="faculty-accordion-toggle"
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Built Environment
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="2">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -225,38 +314,117 @@ export const ViewCourses: React.FC = () => {
                         information technology professionals.
                       </p>
                     </div>
-                    <div className="faculty-accordion">
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="0"
-                            className="faculty-accordion-toggle"
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Engineering
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="1"
-                            className="faculty-accordion-toggle"
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Information Technology
-                          </Accordion.Toggle>
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
 
-                          <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -270,143 +438,117 @@ export const ViewCourses: React.FC = () => {
                         disciplines.
                       </p>
                     </div>
-                    <div className="faculty-accordion">
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="0"
-                            className="faculty-accordion-toggle"
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Diabetes
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="1"
-                            className="faculty-accordion-toggle"
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Health Science
-                          </Accordion.Toggle>
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
 
-                          <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="2"
-                            className="faculty-accordion-toggle"
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Health Services Management
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="2">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="3"
-                            className="faculty-accordion-toggle"
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            High Performance Sport
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="3">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="4"
-                            className="faculty-accordion-toggle"
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Midwifery
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="4">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="5"
-                            className="faculty-accordion-toggle"
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Nursing
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="5">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="6"
-                            className="faculty-accordion-toggle"
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Paliative Care
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="6">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="7"
-                            className="faculty-accordion-toggle"
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Public Health
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="7">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="8"
-                            className="faculty-accordion-toggle"
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Sport and Exercise
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="8">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -420,6 +562,118 @@ export const ViewCourses: React.FC = () => {
                         research.
                       </p>
                     </div>
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
                   </Container>
                 </Route>
                 <Route path="/viewCourses/sciences">
@@ -432,37 +686,117 @@ export const ViewCourses: React.FC = () => {
                         teaching and research.
                       </p>
                     </div>
-                    <div className="faculty-accordion">
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="0"
-                            className="faculty-accordion-toggle"
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Life Sciences
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="1"
-                            className="faculty-accordion-toggle"
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Mathematical and Physical Sciences
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -480,113 +814,117 @@ export const ViewCourses: React.FC = () => {
                         the health profession.
                       </p>
                     </div>
-                    <div className="faculty-accordion">
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="0"
-                            className="faculty-accordion-toggle"
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Clinical Psychology
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="0">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="1"
-                            className="faculty-accordion-toggle"
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Health Policy
-                          </Accordion.Toggle>
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
 
-                          <Accordion.Collapse eventKey="1">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="2"
-                            className="faculty-accordion-toggle"
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Orthoptics
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="2">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="3"
-                            className="faculty-accordion-toggle"
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Pharmacy
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="3">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="4"
-                            className="faculty-accordion-toggle"
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Physiotherapy
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="4">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="5"
-                            className="faculty-accordion-toggle"
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Genetic Counselling
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="5">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
-                      <Accordion>
-                        <Card className="faculty-accordion-card">
-                          <Accordion.Toggle
-                            as={Card.Header}
-                            variant="link"
-                            eventKey="6"
-                            className="faculty-accordion-toggle"
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            Speech Pathology
-                          </Accordion.Toggle>
-                          <Accordion.Collapse eventKey="6">
-                            <Card.Body>Hello! Im the body</Card.Body>
-                          </Accordion.Collapse>
-                        </Card>
-                      </Accordion>
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -599,6 +937,118 @@ export const ViewCourses: React.FC = () => {
                         multiple disciplines to provide the knowledge base to
                         address complex problems in society.
                       </p>
+                    </div>
+                    <div className="faculty-courses-list">
+                      <h3>Undergraduate courses</h3>
+                      <ul>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10276
+                          </a>
+                          Bachelor of Music and Sounds Design
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C09047
+                          </a>
+                          Bachelor of Communication (Honours)
+                        </li>
+
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10361
+                          </a>
+                          Bachelor of Communication (Journalism)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10362
+                          </a>
+                          Bachelor of Communication (Media Arts and Production)
+                        </li>
+                        <li>
+                          {' '}
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10363
+                          </a>
+                          Bachelor of Communication (Public Communication)
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10364
+                          </a>
+                          Bachelor of Communication (Social and Political
+                          Sciences)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10369
+                          </a>
+                          Bachelor of Communication (Creative Writing)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10371
+                          </a>
+                          Bachelor of Communication (Digital and Social Media)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10264
+                          </a>
+                          Bachelor of Global Studies
+                        </li>
+                      </ul>
+
+                      <h3>Postgraduate courses</h3>
+                      <h4>Research degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <h4>Coursework degrees</h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </div>
                   </Container>
                 </Route>

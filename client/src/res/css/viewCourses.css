@@ -33,6 +33,7 @@
 
 .faculty-courses-head h2 {
   padding-bottom: 0.5em;
+  font-size: 48px;
 }
 .faculty-courses-head p {
   padding-bottom: 1em;
@@ -47,6 +48,24 @@
   padding-left: 40px;
 }
 
-.faculty-accordion-card:hover {
-  cursor: pointer;
+.faculty-courses-list {
+  padding-top: 2.5em;
+}
+
+.faculty-courses-list h3 {
+  font-size: 36px;
+  padding-bottom: 0.5em;
+}
+
+.faculty-courses-list a {
+  padding-right: 10px;
+  color: #0f4beb;
+  font-weight: bold;
+}
+.faculty-courses-list li {
+  padding-bottom: 0.5em;
+}
+
+.faculty-courses-list ul {
+  list-style-type: none;
 }
