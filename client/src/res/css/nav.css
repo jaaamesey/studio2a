@@ -10,7 +10,7 @@
   font-family: Arial;
   color: #000000 !important;
   font-weight: bold;
-  height: 40px;
+  height: fit-content;
 }
 
 .nav-link:hover {
