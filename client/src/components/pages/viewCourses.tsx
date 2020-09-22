@@ -10,7 +10,6 @@ export const ViewCourses: React.FC = () => {
     <div>
       <Container fluid>
         <Router>
-          <Row>awdwec</Row>
           <Row>
             <Col sm={3} className="tab-faculty-panel">
               <FacultyTab />
@@ -125,18 +124,6 @@ export const ViewCourses: React.FC = () => {
                           Bachelor of Global Studies
                         </li>
                       </ul>
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li>Doctor of Philosophy</li>
-                        <li>Master of Arts (research)</li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
                     </div>
                   </Container>
                 </Route>
@@ -153,26 +140,66 @@ export const ViewCourses: React.FC = () => {
                     <div className="faculty-courses-list">
                       <h3>Undergraduate courses</h3>
                       <ul>
-                        <li>Bachelor of Accounting</li>
-                        <li>Bachelor of Accounting (Honours)</li>
-                        <li> Bachelor of Business</li>
-                        <li>Bachelor of Business (Honours)</li>
-                        <li>Bachelor of Business Administration</li>
-                        <li>Bachelor of Economics</li>
-                        <li>Bachelor of Entrepreneurship (Honours)</li>
-                        <li>Bachelor of Management (Honours)</li>
-                      </ul>
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li>Doctor of Philosophy</li>
-                        <li>Master of Business (Research)</li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li>Master of Business Administration</li>
-                        <li>Master of Finance</li>
-                        <li>MAster of Human Resource Management</li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10235.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10235
+                          </a>
+                          Bachelor of Accounting
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10026.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10026
+                          </a>
+                          Bachelor of Business
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10340.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10340
+                          </a>
+                          Bachelor of Business Administration
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10348.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10348
+                          </a>
+                          Bachelor of Economics
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c09101.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C09101
+                          </a>
+                          Bachelor of Entrepreneurship (Honours)
+                        </li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10342.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10342
+                          </a>
+                          Bachelor of Management
+                        </li>
                       </ul>
                     </div>
                   </Container>
@@ -194,111 +221,95 @@ export const ViewCourses: React.FC = () => {
                       <ul>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            href="https://handbook.uts.edu.au/courses/c09079.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10276
+                            C09079
                           </a>
-                          Bachelor of Music and Sounds Design
+                          Bachelor of Landscape Architecture (Honours)
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            href="https://handbook.uts.edu.au/courses/c10004.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C09047
+                            C10004
                           </a>
-                          Bachelor of Communication (Honours)
+                          Bachelor of Design in Architecture
                         </li>
 
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            href="https://handbook.uts.edu.au/courses/c10214.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10361
+                            C10214
                           </a>
-                          Bachelor of Communication (Journalism)
+                          Bachelor of Construction Project Management
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            href="https://handbook.uts.edu.au/courses/c10271.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10362
+                            C10271
                           </a>
-                          Bachelor of Communication (Media Arts and Production)
-                        </li>
-                        <li>
-                          {' '}
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10363.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10363
-                          </a>
-                          Bachelor of Communication (Public Communication)
+                          Bachelor of Design in Interior Architecture
                         </li>
                         <li>
                           <a
-                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            href="https://handbook.uts.edu.au/courses/c10273.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10364
+                            C10273
                           </a>
-                          Bachelor of Communication (Social and Political
-                          Sciences)
+                          Bachelor of Design in Animation
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            href="https://handbook.uts.edu.au/courses/c10304.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10369
+                            C10304
                           </a>
-                          Bachelor of Communication (Creative Writing)
+                          Bachelor of Design in Product Design
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            href="https://handbook.uts.edu.au/courses/c10306.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10371
+                            C10306
                           </a>
-                          Bachelor of Communication (Digital and Social Media)
+                          Bachelor of Design in Fashion and Textiles
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            href="https://handbook.uts.edu.au/courses/c10308.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10264
+                            C10308
                           </a>
-                          Bachelor of Global Studies
+                          Bachelor of Design in Visual Communication
                         </li>
-                      </ul>
-
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10310.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10310
+                          </a>
+                          Bachelor of Property Economics
+                        </li>
                       </ul>
                     </div>
                   </Container>
@@ -319,111 +330,97 @@ export const ViewCourses: React.FC = () => {
                       <ul>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            href="https://handbook.uts.edu.au/courses/c09066.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10276
+                            C09066
                           </a>
-                          Bachelor of Music and Sounds Design
+                          Bachelor of Engineering (Honours)
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            href="https://handbook.uts.edu.au/courses/c09067.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C09047
+                            C09067
                           </a>
-                          Bachelor of Communication (Honours)
+                          Bachelor of Engineering (Honours) Diploma in
+                          Professional Engineering Practice
                         </li>
 
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            href="https://handbook.uts.edu.au/courses/c10066.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10361
+                            C10066
                           </a>
-                          Bachelor of Communication (Journalism)
+                          Bachelor of Engineering Science
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            href="https://handbook.uts.edu.au/courses/c09119.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10362
+                            C09119
                           </a>
-                          Bachelor of Communication (Media Arts and Production)
-                        </li>
-                        <li>
-                          {' '}
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10363.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10363
-                          </a>
-                          Bachelor of Communication (Public Communication)
+                          Bachelor of Computing Science (Honours)
                         </li>
                         <li>
                           <a
-                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            href="https://handbook.uts.edu.au/courses/c10143.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10364
+                            C10143
                           </a>
-                          Bachelor of Communication (Social and Political
-                          Sciences)
+                          Bachelor of Information Technology
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            href="https://handbook.uts.edu.au/courses/c10148.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10369
+                            C10148
                           </a>
-                          Bachelor of Communication (Creative Writing)
+                          Bachelor of Science in Information Technology
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            href="https://handbook.uts.edu.au/courses/c10229.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10371
+                            C10229
                           </a>
-                          Bachelor of Communication (Digital and Social Media)
+                          Bachelor of Science in Games Development
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            href="https://handbook.uts.edu.au/courses/c10345.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10264
+                            C10345
                           </a>
-                          Bachelor of Global Studies
+                          Bachelor of Science in Information Technology Diploma
+                          in Information Technology Professional Practice
                         </li>
-                      </ul>
-
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                          <a
+                            href="https://handbook.uts.edu.au/courses/c10395.html"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            C10395
+                          </a>
+                          Bachelor of Information Systems
+                        </li>
                       </ul>
                     </div>
                   </Container>
@@ -443,111 +440,55 @@ export const ViewCourses: React.FC = () => {
                       <ul>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            href="https://handbook.uts.edu.au/courses/c10122.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10276
+                            C10122
                           </a>
-                          Bachelor of Music and Sounds Design
+                          Bachelor of Nursing
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            href="https://handbook.uts.edu.au/courses/c10225.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C09047
+                            C10225
                           </a>
-                          Bachelor of Communication (Honours)
+                          Bachelor of Midwifery
                         </li>
 
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            href="https://handbook.uts.edu.au/courses/c10300.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10361
+                            C10300
                           </a>
-                          Bachelor of Communication (Journalism)
+                          Bachelor of Sport and Exercise Science
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            href="https://handbook.uts.edu.au/courses/c10301.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10362
+                            C10301
                           </a>
-                          Bachelor of Communication (Media Arts and Production)
-                        </li>
-                        <li>
-                          {' '}
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10363.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10363
-                          </a>
-                          Bachelor of Communication (Public Communication)
+                          Bachelor of Sport and Exercise Management
                         </li>
                         <li>
                           <a
-                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            href="https://handbook.uts.edu.au/courses/c10360.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10364
+                            C10360
                           </a>
-                          Bachelor of Communication (Social and Political
-                          Sciences)
+                          Bachelor of Health Science
                         </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10369.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10369
-                          </a>
-                          Bachelor of Communication (Creative Writing)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10371.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10371
-                          </a>
-                          Bachelor of Communication (Digital and Social Media)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10264.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10264
-                          </a>
-                          Bachelor of Global Studies
-                        </li>
-                      </ul>
-
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
                       </ul>
                     </div>
                   </Container>
@@ -567,111 +508,24 @@ export const ViewCourses: React.FC = () => {
                       <ul>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            href="https://handbook.uts.edu.au/courses/c10124.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10276
+                            C10124
                           </a>
-                          Bachelor of Music and Sounds Design
+                          Bachelor of Laws
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            href="https://handbook.uts.edu.au/courses/c09083.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C09047
+                            C09083
                           </a>
-                          Bachelor of Communication (Honours)
+                          Bachelor of Laws (Honours)
                         </li>
-
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10361.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10361
-                          </a>
-                          Bachelor of Communication (Journalism)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10362.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10362
-                          </a>
-                          Bachelor of Communication (Media Arts and Production)
-                        </li>
-                        <li>
-                          {' '}
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10363.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10363
-                          </a>
-                          Bachelor of Communication (Public Communication)
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10364
-                          </a>
-                          Bachelor of Communication (Social and Political
-                          Sciences)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10369.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10369
-                          </a>
-                          Bachelor of Communication (Creative Writing)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10371.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10371
-                          </a>
-                          Bachelor of Communication (Digital and Social Media)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10264.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10264
-                          </a>
-                          Bachelor of Global Studies
-                        </li>
-                      </ul>
-
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
                       </ul>
                     </div>
                   </Container>
@@ -691,239 +545,116 @@ export const ViewCourses: React.FC = () => {
                       <ul>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            href="https://handbook.uts.edu.au/courses/c10115.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10276
+                            C10115
                           </a>
-                          Bachelor of Music and Sounds Design
+                          Bachelor of Biomedical Science
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            href="https://handbook.uts.edu.au/courses/c10172.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C09047
+                            C10172
                           </a>
-                          Bachelor of Communication (Honours)
+                          Bachelor of Biotechnology
                         </li>
 
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            href="https://handbook.uts.edu.au/courses/c10184.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10361
+                            C10184
                           </a>
-                          Bachelor of Communication (Journalism)
+                          Bachelor of Medical Science
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            href="https://handbook.uts.edu.au/courses/c10223.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10362
+                            C10223
                           </a>
-                          Bachelor of Communication (Media Arts and Production)
+                          Bachelor of Environmental Biology
                         </li>
                         <li>
                           {' '}
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10363.html"
+                            href="https://handbook.uts.edu.au/courses/c10228.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10363
+                            C10228
                           </a>
-                          Bachelor of Communication (Public Communication)
+                          Bachelor of Marine Biology
                         </li>
                         <li>
                           <a
-                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
+                            href="https://handbook.uts.edu.au/courses/c10242.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10364
+                            C10242
                           </a>
-                          Bachelor of Communication (Social and Political
-                          Sciences)
+                          Bachelor of Science
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10369.html"
+                            href="https://handbook.uts.edu.au/courses/c10275.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10369
+                            C10275
                           </a>
-                          Bachelor of Communication (Creative Writing)
+                          Bachelor of Medicinal Chemistry
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10371.html"
+                            href="https://handbook.uts.edu.au/courses/c10346.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10371
+                            C10346
                           </a>
-                          Bachelor of Communication (Digital and Social Media)
+                          Bachelor of Biomedical Physics
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10264.html"
+                            href="https://handbook.uts.edu.au/courses/c10347.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10264
+                            C10347
                           </a>
-                          Bachelor of Global Studies
-                        </li>
-                      </ul>
-
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                    </div>
-                  </Container>
-                </Route>
-                <Route path="/viewCourses/graduate-school-of-health">
-                  <Container className="faculty-courses">
-                    <div className="faculty-courses-head">
-                      <h2>Graduate School of Health</h2>
-                      <p>
-                        We specialise in innovative and practice-based Graduate
-                        Entry Masters programs in pharmacy, speech pathology,
-                        orthoptics, physiotherapy, genetic counselling and
-                        clinical psychology. Our professional partnerships,
-                        expert staff and world-class facilities are the
-                        foundational pillars which drive us to be innovators in
-                        the health profession.
-                      </p>
-                    </div>
-                    <div className="faculty-courses-list">
-                      <h3>Undergraduate courses</h3>
-                      <ul>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10276.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10276
-                          </a>
-                          Bachelor of Music and Sounds Design
+                          Bachelor of Advanced Science
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            href="https://handbook.uts.edu.au/courses/c10384.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C09047
+                            C10384
                           </a>
-                          Bachelor of Communication (Honours)
-                        </li>
-
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10361.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10361
-                          </a>
-                          Bachelor of Communication (Journalism)
+                          Bachelor of Science in Analytics
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10362.html"
+                            href="https://handbook.uts.edu.au/courses/c10387.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10362
+                            C10387
                           </a>
-                          Bachelor of Communication (Media Arts and Production)
+                          Bachelor of Forensic Science
                         </li>
-                        <li>
-                          {' '}
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10363.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10363
-                          </a>
-                          Bachelor of Communication (Public Communication)
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10364
-                          </a>
-                          Bachelor of Communication (Social and Political
-                          Sciences)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10369.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10369
-                          </a>
-                          Bachelor of Communication (Creative Writing)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10371.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10371
-                          </a>
-                          Bachelor of Communication (Digital and Social Media)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10264.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10264
-                          </a>
-                          Bachelor of Global Studies
-                        </li>
-                      </ul>
-
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
                       </ul>
                     </div>
                   </Container>
@@ -943,111 +674,36 @@ export const ViewCourses: React.FC = () => {
                       <ul>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10276.html"
+                            href="https://handbook.uts.edu.au/courses/c10390.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10276
+                            C10390
                           </a>
-                          Bachelor of Music and Sounds Design
+                          Bachelor of Technology and Innovation
                         </li>
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c09047.html"
+                            href="https://handbook.uts.edu.au/courses/c20060.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C09047
+                            C20060
                           </a>
-                          Bachelor of Communication (Honours)
+                          Diploma in Innovation
                         </li>
 
                         <li>
                           <a
-                            href="https://handbook.uts.edu.au/courses/c10361.html"
+                            href="https://handbook.uts.edu.au/courses/c09122.html"
                             target="_blank"
                             rel="noreferrer"
                           >
-                            C10361
+                            C09122
                           </a>
-                          Bachelor of Communication (Journalism)
+                          Bachelor of Creative Intelligence and Innovation
+                          (Honours)
                         </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10362.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10362
-                          </a>
-                          Bachelor of Communication (Media Arts and Production)
-                        </li>
-                        <li>
-                          {' '}
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10363.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10363
-                          </a>
-                          Bachelor of Communication (Public Communication)
-                        </li>
-                        <li>
-                          <a
-                            href="https://www.handbook.uts.edu.au/courses/c09067.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10364
-                          </a>
-                          Bachelor of Communication (Social and Political
-                          Sciences)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10369.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10369
-                          </a>
-                          Bachelor of Communication (Creative Writing)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10371.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10371
-                          </a>
-                          Bachelor of Communication (Digital and Social Media)
-                        </li>
-                        <li>
-                          <a
-                            href="https://handbook.uts.edu.au/courses/c10264.html"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            C10264
-                          </a>
-                          Bachelor of Global Studies
-                        </li>
-                      </ul>
-
-                      <h3>Postgraduate courses</h3>
-                      <h4>Research degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                      <h4>Coursework degrees</h4>
-                      <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
                       </ul>
                     </div>
                   </Container>

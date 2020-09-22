@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../res/css/style.css';
 
-import { NavigationBar } from './nav';
+import { NavigationBar, Footer } from './nav';
 import {
   HomePage,
   TestPage,
@@ -18,29 +18,34 @@ import {
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <NavigationBar />
-      <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route path="/test">
-          <TestPage />
-        </Route>
-        <Route path="/viewCourses">
-          <ViewCourses />
-        </Route>
-        <Route path="/registration">
-          <RegistrationPage />
-        </Route>
-        <Route path="/login">
-          <LoginPage />
-        </Route>
-        <Route path="/recommendationlist">
-          <RecommendationList />
-        </Route>
-      </Switch>
-    </Router>
+    <div className="page-container">
+      <div className="content-wrap">
+        <Router>
+          <NavigationBar />
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route path="/test">
+              <TestPage />
+            </Route>
+            <Route path="/viewCourses">
+              <ViewCourses />
+            </Route>
+            <Route path="/registration">
+              <RegistrationPage />
+            </Route>
+            <Route path="/login">
+              <LoginPage />
+            </Route>
+            <Route path="/recommendationlist">
+              <RecommendationList />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+      <Footer />
+    </div>
   );
 };
 

@@ -50,11 +50,6 @@ export const FacultyTab: React.FC = () => {
         </Link>
       </Row>
       <Row className="tab-faculty">
-        <Link to="/viewCourses/graduate-school-of-health" className="tab-link">
-          Graduate School of Health
-        </Link>
-      </Row>
-      <Row className="tab-faculty">
         <Link
           to="/viewCourses/transdisciplinary-innovation"
           className="tab-link"
