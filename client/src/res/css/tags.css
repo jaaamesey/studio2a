@@ -1,0 +1,43 @@
+.card {
+  border-collapse: collapse;
+  margin: 25px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.h3,
+h4 {
+  align-self: center;
+}
+
+.input-group.md-form.form-sm.form-1 input {
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.search {
+  width: 50%;
+}
+
+.button {
+  width: 20%;
+  margin: 1.5rem;
+  padding: 0.3em;
+  justify-content: center;
+  border-radius: 50px;
+  background: #b2b2b2;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.nextButton {
+  position: right;
+  width: 20%;
+  margin: 1rem;
+  background-color: #2259ec;
+  justify-content: center;
+}

@@ -11,6 +11,7 @@ import {
   TestPage2,
   RegistrationPage,
   LoginPage,
+  RecommendationTags,
 } from './pages';
 
 const App: React.FC = () => {
@@ -26,6 +27,9 @@ const App: React.FC = () => {
         </Route>
         <Route path="/test-2">
           <TestPage2 />
+        </Route>
+        <Route path="/tags">
+          <RecommendationTags />
         </Route>
         <Route path="/registration">
           <RegistrationPage />
