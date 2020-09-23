@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../../res/css/nav.css';
 
 export const NavigationBar: React.FC = () => {
   return (
@@ -8,12 +9,12 @@ export const NavigationBar: React.FC = () => {
       <Link to="/">
         <Navbar.Brand>Not UTS</Navbar.Brand>
       </Link>
-      <Nav className="mr-auto">
+      <Nav justify className="mr-auto">
         <Link to="/test" className="nav-link">
-          Test
+          Home
         </Link>
         <Link to="/test-2" className="nav-link">
-          Test 2
+          Recommend Courses
         </Link>
         <Link to="/tags" className="nav-link">
           Recommendation Tags
@@ -21,8 +22,20 @@ export const NavigationBar: React.FC = () => {
         <Link to="/registration" className="nav-link">
           Sign Up
         </Link>
+        <Link to="/test-2" className="nav-link">
+          View Courses
+        </Link>
         <Link to="/login" className="nav-link">
-          Sign In
+          Login
+        </Link>
+        <Link to="/registration" className="nav-link">
+          Sign up
+        </Link>
+        <Link to="/test-2" className="nav-link">
+          Contact Us
+        </Link>
+        <Link to="/recommendationlist" className="nav-link">
+          Recommendation List (Test)
         </Link>
       </Nav>
     </Navbar>

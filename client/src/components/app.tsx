@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../res/css/style.css';
 
 import { NavigationBar } from './nav';
@@ -12,6 +13,7 @@ import {
   RegistrationPage,
   LoginPage,
   RecommendationTags,
+  RecommendationList,
 } from './pages';
 
 const App: React.FC = () => {
@@ -36,6 +38,9 @@ const App: React.FC = () => {
         </Route>
         <Route path="/login">
           <LoginPage />
+        </Route>
+        <Route path="/recommendationlist">
+          <RecommendationList />
         </Route>
       </Switch>
     </Router>

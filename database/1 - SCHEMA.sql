@@ -1,8 +1,60 @@
--- SCHEMA --
-CREATE TABLE test_table
-(
-    column1 varchar,
-    column2 varchar,
-    column3 varchar
+-- SCHEMA -- 
+CREATE TABLE "user" (
+    US_Id SERIAL PRIMARY KEY,
+    US_Name VARCHAR(100) NOT NULL,
+    US_Password VARCHAR(100) NOT NULL,
+    US_Email VARCHAR(100) UNIQUE NOT NULL,
+    US_Type VARCHAR(7) NOT NULL
 );
 
+CREATE TABLE Tag
+(
+    TG_Id SERIAL PRIMARY KEY,
+    TG_TG_Parent INT NULL,
+    TG_Name VARCHAR(100) NOT NULL,
+
+    FOREIGN KEY(TG_TG_Parent)
+        REFERENCES Tag (TG_Id)
+);
+
+CREATE TABLE User_Tag
+(
+    UT_Id SERIAL PRIMARY KEY,
+    UT_US_User INT NOT NULL,
+    UT_TG_Tag INT NOT NULL,
+
+    FOREIGN KEY(UT_US_User)
+        REFERENCES "user" (US_Id),
+    FOREIGN KEY(UT_TG_Tag)
+        REFERENCES Tag (TG_Id)  
+);
+
+CREATE TABLE Course
+(
+    CO_Id SERIAL PRIMARY KEY,
+    CO_Name VARCHAR(100) NOT NULL,
+    CO_Description VARCHAR(512) NULL,
+    CO_Duration INT NULL
+);
+
+CREATE TABLE Course_Tag
+(
+    CT_Id SERIAL PRIMARY KEY,
+    CT_CO_Course INT NOT NULL,
+    CT_TG_Tag INT NOT NULL,
+
+    FOREIGN KEY(CT_TG_Tag)
+        REFERENCES Tag (TG_Id),
+    FOREIGN KEY(CT_CO_Course)
+        REFERENCES Course (CO_Id)
+);
+
+CREATE Table Session
+(
+    SS_Id SERIAL PRIMARY KEY,
+    SS_US_User INT NOT NULL,
+    SS_Expiry timestamp NOT NULL,
+
+    FOREIGN KEY (SS_US_User)
+        REFERENCES "user" (US_Id)
+);

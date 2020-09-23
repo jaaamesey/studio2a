@@ -1,6 +1,6 @@
 {
   "name": "studio2a-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": "",
   "private": true,
@@ -24,6 +24,7 @@
     "@nestjs/common": "^7.3.2",
     "@nestjs/core": "^7.3.2",
     "@nestjs/platform-fastify": "^7.3.2",
+    "pg-promise": "^10.6.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.0"
