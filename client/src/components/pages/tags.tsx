@@ -1,7 +1,5 @@
 import React from 'react';
 import '../../res/css/tags.css';
-import BootstrapTable from 'react-bootstrap-table-next';
-import search from './search.svg';
 import {
   Button,
   Container,
@@ -12,6 +10,7 @@ import {
 } from 'react-bootstrap';
 
 export const RecommendationTags: React.FC = () => {
+  
   return (
     <div>
       <Container>
@@ -84,9 +83,7 @@ export const RecommendationTags: React.FC = () => {
         </Container>
       </Card>
 
-      <Button className="nextButton" onClick={this.handleClick}>
-        View my Course Preference
-      </Button>
+      <Button className="nextButton">View my Course Preference</Button>
     </div>
   );
 };
