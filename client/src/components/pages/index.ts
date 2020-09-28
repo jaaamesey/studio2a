@@ -4,3 +4,4 @@ export { HomePage } from './home';
 export { RegistrationPage } from './registration';
 export { LoginPage } from './login';
 export { RecommendationList } from './recommendationList';
+export { ViewCourses } from './viewCourses';
