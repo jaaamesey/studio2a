@@ -10,7 +10,18 @@ import {
 } from 'react-bootstrap';
 
 export const RecommendationTags: React.FC = () => {
-  
+  function GridListComponent(option: {
+    id: string | undefined;
+    tileInfo: React.ReactNode;
+  }) {
+    return (
+      <li>
+        <input type="checkbox" id={option.id} className="button" />
+        <label htmlFor={option.id}>{option.tileInfo}</label>
+      </li>
+    );
+  }
+
   return (
     <div>
       <Container>
@@ -31,7 +42,7 @@ export const RecommendationTags: React.FC = () => {
 
       <Card className="card">
         <Card.Header as="h5">Skills and Attributes</Card.Header>
-        <Container>
+        {/* <Container>
           <Row>
             <Button className="button">Emotional Intelligence</Button>
             <Button className="button">Flexibility</Button>
@@ -80,7 +91,18 @@ export const RecommendationTags: React.FC = () => {
             <Button className="button">Biology</Button>
             <Button className="button">History</Button>
           </Row>
-        </Container>
+        </Container> */}
+
+        <ul className="grid">
+          <GridListComponent id="grid-opt-1" tileInfo="Option 1" />
+          <GridListComponent id="grid-opt-2" tileInfo="Option 2" />
+          <GridListComponent id="grid-opt-3" tileInfo="Option 3" />
+          <GridListComponent id="grid-opt-4" tileInfo="Option 4" />
+          <GridListComponent id="grid-opt-5" tileInfo="Option 5" />
+          <GridListComponent id="grid-opt-6" tileInfo="Option 6" />
+          <GridListComponent id="grid-opt-7" tileInfo="Option 7" />
+          <GridListComponent id="grid-opt-8" tileInfo="Option 8" />
+        </ul>
       </Card>
 
       <Button className="nextButton">View my Course Preference</Button>
