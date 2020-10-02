@@ -25,7 +25,7 @@ export const RecommendationTags: React.FC = () => {
   return (
     <div>
       <Container>
-        <h3>Search Course Tags</h3>
+        <h3>Search Course Tags:</h3>
 
         <InputGroup className="search">
           <InputGroup.Prepend>
@@ -37,71 +37,47 @@ export const RecommendationTags: React.FC = () => {
           />
         </InputGroup>
 
-        <h4>Choose up to 10 interests</h4>
+        <h5>Choose up to 10 interests</h5>
       </Container>
 
       <Card className="card">
-        <Card.Header as="h5">Skills and Attributes</Card.Header>
-        {/* <Container>
-          <Row>
-            <Button className="button">Emotional Intelligence</Button>
-            <Button className="button">Flexibility</Button>
-            <Button className="button">Motivation</Button>
-            <Button className="button">Communication</Button>
-          </Row>
-
-          <Row>
-            <Button className="button">Public Speaking</Button>
-            <Button className="button">Problem Solving</Button>
-            <Button className="button">Analytics</Button>
-            <Button className="button">Creativity</Button>
-          </Row>
-
-          <Row>
-            <Button className="button">Programming Skills</Button>
-            <Button className="button">Leadership</Button>
-            <Button className="button">Management</Button>
-            <Button className="button">Willingness To Learn</Button>
-          </Row>
-
-          <Row>
-            <Button className="button">Customer Service</Button>
-            <Button className="button">Flexibility</Button>
-            <Button className="button">Motivation</Button>
-            <Button className="button">Attention to Detail</Button>
-          </Row>
-
-          <Row>
-            <Button className="button">Empathy</Button>
-            <Button className="button">Decision Making</Button>
-            <Button className="button">Organisation</Button>
-            <Button className="button">Time Management</Button>
-          </Row>
-
-          <Row>
-            <Button className="button">Teamwork</Button>
-            <Button className="button">Strategic Planning</Button>
-            <Button className="button">Public Speaking</Button>
-            <Button className="button">Critical Thinking</Button>
-          </Row>
-
-          <Row>
-            <Button className="button">Mathematics</Button>
-            <Button className="button">English</Button>
-            <Button className="button">Biology</Button>
-            <Button className="button">History</Button>
-          </Row>
-        </Container> */}
-
+        <Card.Header className="title" as="h4">
+          Skills and Attributes
+        </Card.Header>
         <ul className="grid">
-          <GridListComponent id="grid-opt-1" tileInfo="Option 1" />
-          <GridListComponent id="grid-opt-2" tileInfo="Option 2" />
-          <GridListComponent id="grid-opt-3" tileInfo="Option 3" />
-          <GridListComponent id="grid-opt-4" tileInfo="Option 4" />
-          <GridListComponent id="grid-opt-5" tileInfo="Option 5" />
-          <GridListComponent id="grid-opt-6" tileInfo="Option 6" />
-          <GridListComponent id="grid-opt-7" tileInfo="Option 7" />
-          <GridListComponent id="grid-opt-8" tileInfo="Option 8" />
+          <GridListComponent
+            id="grid-opt-1"
+            tileInfo="Emotional Intelligence"
+          />
+          <GridListComponent id="grid-opt-2" tileInfo="Flexibility" />
+          <GridListComponent id="grid-opt-3" tileInfo="Motivation" />
+          <GridListComponent id="grid-opt-4" tileInfo="Communication" />
+          <GridListComponent id="grid-opt-5" tileInfo="Public Speaking" />
+          <GridListComponent id="grid-opt-6" tileInfo="Problem Solving" />
+          <GridListComponent id="grid-opt-7" tileInfo="Analytics" />
+          <GridListComponent id="grid-opt-8" tileInfo="Creativity" />
+          <GridListComponent id="grid-opt-9" tileInfo="Programming Skills" />
+          <GridListComponent id="grid-opt-10" tileInfo="Leadership" />
+          <GridListComponent id="grid-opt-11" tileInfo="Management" />
+          <GridListComponent id="grid-opt-12" tileInfo="Willingness to Learn" />
+          <GridListComponent id="grid-opt-13" tileInfo="Customer Service" />
+          <GridListComponent id="grid-opt-14" tileInfo="Attention to Detail" />
+          <GridListComponent id="grid-opt-15" tileInfo="Empathy" />
+          <GridListComponent id="grid-opt-16" tileInfo="Decision Making" />
+          <GridListComponent id="grid-opt-17" tileInfo="Organisation" />
+          <GridListComponent id="grid-opt-18" tileInfo="Time Management" />
+          <GridListComponent id="grid-opt-19" tileInfo="Teamwork" />
+          <GridListComponent id="grid-opt-20" tileInfo="Strategic Planning" />
+          <GridListComponent id="grid-opt-21" tileInfo="Public Speaking" />
+          <GridListComponent id="grid-opt-22" tileInfo="Critical Thinking" />
+          <GridListComponent id="grid-opt-23" tileInfo="Mathematics" />
+          <GridListComponent id="grid-opt-24" tileInfo="English" />
+          <GridListComponent id="grid-opt-25" tileInfo="Biology" />
+          <GridListComponent id="grid-opt-26" tileInfo="History" />
+          <GridListComponent id="grid-opt-27" tileInfo="Geography" />
+          <GridListComponent id="grid-opt-28" tileInfo="Law" />
+          <GridListComponent id="grid-opt-29" tileInfo="Economics" />
+          <GridListComponent id="grid-opt-30" tileInfo="Business" />
         </ul>
       </Card>
 

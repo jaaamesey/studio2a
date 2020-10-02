@@ -1,28 +1,45 @@
 .card {
   border-collapse: collapse;
+  position: center;
   margin: 25px 0;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.h3,
-h4 {
-  align-self: center;
+h3,
+h5 {
+  margin: 1rem;
+  text-align: center;
+}
+
+.title {
+  background-color: #0f4beb;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
 }
 
 .input-group.md-form.form-sm.form-1 input {
-  border: 1px solid #bdbdbd;
+  border: 2px solid #bdbdbd;
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
 
 .search {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.button {
+ul {
+  position: center;
+  list-style-type: none;
+}
+
+/* .button {
   width: 20%;
   margin: 1.5rem;
   padding: 0.3em;
@@ -32,27 +49,20 @@ h4 {
   font-weight: normal;
   text-align: center;
   font-size: 1.2rem;
-}
-
-.nextButton {
-  position: right;
-  width: 20%;
-  margin: 1rem;
-  background-color: #2259ec;
-  justify-content: center;
-}
+} */
 
 /* Updated css */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-auto-flow: row;
-  grid-gap: 2px;
+  grid-gap: 10px;
   place-items: stretch;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1100px;
+  margin: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Cabin', sans-serif;
-  font-size: 18px;
   color: #ffffff;
   transition: all 400ms ease-in-out;
 }
@@ -60,7 +70,6 @@ h4 {
 .grid li input[type='checkbox'] {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
 }
 
 .grid li label {
@@ -70,31 +79,26 @@ h4 {
   justify-content: center;
   text-align: center;
   height: 48px;
-  background: #fff;
-  color: #111;
-  border: 4px solid #fff;
-  border-radius: 2px;
-  font-size: 0.95em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  transition: all 400ms ease-in-out;
+  background: #b2b2b2;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .grid li label:hover,
 .grid li input[type='checkbox']:checked ~ label {
-  border: 4px solid #0d0;
-  color: #111;
-  transition: all 400ms ease-in-out;
+  background-color: #0f4beb;
+  color: #ffffff;
 }
 
-.submit {
-  position: absolute;
-  margin: auto 47.5%;
-  padding: 10px;
-  background: #090;
-  border-radius: 10%;
-  top: 130px;
-  color: #ddd;
+.nextButton {
+  position: center;
+  display: flex;
+  width: 20%;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: 150px;
+  background-color: #0f4beb;
+  border-radius: 50px;
+  justify-content: center;
 }
