@@ -15,6 +15,7 @@ export const NavigationBar: React.FC = () => {
         </Link>
         <Link to="/tags" className="nav-link">
           Recommendation Tags
+        </Link>
         <Link to="/viewCourses" className="nav-link">
           View Courses
         </Link>
