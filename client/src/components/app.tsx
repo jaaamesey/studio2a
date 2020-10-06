@@ -15,6 +15,7 @@ import {
   RecommendationTags,
   RecommendationList,
   ViewCourses,
+  AdminDashboard,
 } from './pages';
 
 const App: React.FC = () => {
@@ -44,6 +45,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/recommendationlist">
               <RecommendationList />
+            </Route>
+            <Route path="/admindashboard">
+              <AdminDashboard />
             </Route>
           </Switch>
         </Router>
