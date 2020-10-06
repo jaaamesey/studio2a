@@ -5,7 +5,7 @@ import '../../res/css/nav.css';
 
 export const NavigationBar: React.FC = () => {
   return (
-    <Navbar sticky="top" bg="light" variant="light">
+    <Navbar sticky="top" bg="light" variant="light" className="nav-bar">
       <Link to="/">
         <Navbar.Brand>Not UTS</Navbar.Brand>
       </Link>
@@ -13,16 +13,9 @@ export const NavigationBar: React.FC = () => {
         <Link to="/test" className="nav-link">
           Home
         </Link>
-        <Link to="/test-2" className="nav-link">
-          Recommend Courses
-        </Link>
         <Link to="/tags" className="nav-link">
           Recommendation Tags
-        </Link>
-        <Link to="/registration" className="nav-link">
-          Sign Up
-        </Link>
-        <Link to="/test-2" className="nav-link">
+        <Link to="/viewCourses" className="nav-link">
           View Courses
         </Link>
         <Link to="/login" className="nav-link">

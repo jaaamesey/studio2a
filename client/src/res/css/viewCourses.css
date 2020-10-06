@@ -1,0 +1,72 @@
+.tab-faculty-panel {
+  color: white;
+  background-color: #323232;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 3em;
+  margin-top: 3em;
+}
+
+.tab-title {
+  padding: 1em;
+  font-weight: bold;
+  align-content: center;
+}
+
+.tab-faculty {
+  padding: 0.5em;
+}
+
+.tab-link {
+  color: white;
+}
+
+.tab-link:hover {
+  color: white;
+}
+
+.faculty-courses {
+  padding: 3em;
+}
+.faculty-courses-head {
+  border-bottom: 0.2em solid black;
+}
+
+.faculty-courses-head h2 {
+  padding-bottom: 0.5em;
+  font-size: 48px;
+}
+.faculty-courses-head p {
+  padding-bottom: 1em;
+}
+
+.faculty-accordion {
+  padding: 2em;
+  padding-top: 2.5em;
+}
+
+.faculty-accordion-toggle {
+  padding-left: 40px;
+}
+
+.faculty-courses-list {
+  padding-top: 2.5em;
+}
+
+.faculty-courses-list h3 {
+  font-size: 36px;
+  padding-bottom: 0.5em;
+}
+
+.faculty-courses-list a {
+  padding-right: 10px;
+  color: #0f4beb;
+  font-weight: bold;
+}
+.faculty-courses-list li {
+  padding-bottom: 0.5em;
+}
+
+.faculty-courses-list ul {
+  list-style-type: none;
+}

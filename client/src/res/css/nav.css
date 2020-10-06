@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.nav-bar {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.19);
+}
+
 .nav-link {
   font-family: Arial;
   color: #000000 !important;
