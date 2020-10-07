@@ -13,8 +13,8 @@ export const NavigationBar: React.FC = () => {
         <Link to="/test" className="nav-link">
           Home
         </Link>
-        <Link to="/test-2" className="nav-link">
-          Recommend Courses
+        <Link to="/tags" className="nav-link">
+          Recommendation Tags
         </Link>
         <Link to="/viewCourses" className="nav-link">
           View Courses
