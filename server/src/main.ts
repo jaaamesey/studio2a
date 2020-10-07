@@ -15,6 +15,7 @@ const db = pgp({
   port: 5432,
   host: 'localhost',
 });
+
 async function bootstrap() {
   await db.connect();
   const app = await NestFactory.create<NestFastifyApplication>(
