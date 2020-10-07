@@ -12,12 +12,16 @@ const db = pgp({
   user: 'studio2a',
   database: 'studio2a',
   password: 'DEV_PASSWORD',
-  port: 5432,
-  host: 'localhost',
+  port: 5420,
+  host: 'host.docker.internal',
 });
 
 async function bootstrap() {
-  await db.connect();
+  try {
+    await db.connect();
+  } catch (e) {
+    throw new Error(`Could not connect to database: ${e}`);
+  }
   const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,
     new FastifyAdapter(),
