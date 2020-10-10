@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { LoginDTO } from '../dto/user/LoginDTO';
+import { RegisterDTO } from '../dto/user/RegisterDTO'
 import { db } from '../database';
 
 @Injectable()
@@ -19,7 +20,21 @@ export class UserService {
 					resolve(true);
 				}
 			})
-			.catch((error:any) => { console.log(error) });
+			.catch((error: any) => { console.log(error) });
+		}); 
+	}
+
+	attemptRegister(registerDTO: RegisterDTO): Promise<boolean> {
+		return new Promise(async (resolve) =>  {
+			await db.none('INSERT INTO "user" (US_Name, US_Password, US_Email, US_Type) VALUES ($1, $2, $3, \'STUDENT\')', 
+				[registerDTO.username, registerDTO.password, registerDTO.email])
+				.catch((error: any) => 
+				{ 
+					console.log(error);
+					resolve(false);
+				});
+
+			resolve(true);
 		}); 
 	}
 }

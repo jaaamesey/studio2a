@@ -1,6 +1,7 @@
 import { Controller, Post, Get, Body, Request } from '@nestjs/common';
 import { UserService } from 'src/services/user.service';
 import { LoginDTO } from '../dto/user/LoginDTO';
+import { RegisterDTO } from '../dto/user/RegisterDTO';
 
 @Controller('user')
 export class UserController {
@@ -25,5 +26,11 @@ export class UserController {
 			isSuccess,
 			session: null,
 		};
+	}
+
+	@Post('register')
+	async register(@Request() req: any) {
+		const isSuccess = await this.userService.attemptRegister(req.body.user as RegisterDTO);
+		return { isSuccess };
 	}
 }
