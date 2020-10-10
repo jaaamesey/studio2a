@@ -40,12 +40,12 @@ export const LoginPage: React.FC = () => {
 		
 			<div>
 				<h2>Login</h2>
-				<label htmlFor="email">Email</label>
+				<label htmlFor="username">Username</label>
 				<br />
 				<input 
-					type="email"
+					type="username"
 					size={50}
-					name="email"
+					name="username"
 					value={username}
 					onChange={e => setUsername(e.target.value)}
 					required
@@ -76,7 +76,6 @@ export const LoginPage: React.FC = () => {
 			{message != '' &&
 				<label>{message}</label>
 			}
-		
 	</div>
 	);
 };
