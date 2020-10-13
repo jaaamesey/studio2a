@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../../res/css/homepage.css';
 import Image1 from '../../res/img/Picture1.png';
 import Image2 from '../../res/img/Picture2.png';
@@ -27,9 +28,9 @@ export const HomePage: React.FC = () => {
               level. The system will then recommend suitable courses for you.
             </p>
 
-            <Button size="lg" className="btn btn-default carousel-btn">
+            <Link to="tags" className="btn btn-primary carousel-btn">
               Start Here
-            </Button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -44,9 +45,9 @@ export const HomePage: React.FC = () => {
               Find the right degree for you: You will also be able to browse
               through the whole catalogue of courses that we offer.
             </p>
-            <Button className="carousel-btn" size="lg">
+            <Link to="viewCourses" className="btn btn-primary carousel-btn">
               See more
-            </Button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -61,9 +62,9 @@ export const HomePage: React.FC = () => {
               Whether you are a prospective or current student, if you would
               like to ask about courses, make an enquiry online.
             </p>
-            <Button className="carousel-btn" size="lg">
+            <Link to="contactUs" className="btn btn-primary carousel-btn">
               Contact us
-            </Button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

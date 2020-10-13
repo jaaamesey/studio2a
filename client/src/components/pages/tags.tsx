@@ -8,6 +8,7 @@ import {
   InputGroup,
   FormControl,
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const RecommendationTags: React.FC = () => {
   function GridListComponent(option: {
@@ -81,7 +82,9 @@ export const RecommendationTags: React.FC = () => {
         </ul>
       </Card>
 
-      <Button className="nextButton">View my Course Preference</Button>
+      <Link to="/recommendationlist" className="btn btn-primary nextButton">
+        View my Course Preference
+      </Link>
     </div>
   );
 };
