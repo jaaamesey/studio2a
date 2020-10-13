@@ -32,8 +32,8 @@ const App: React.FC = () => {
               <TestPage />
             </Route>
             <Route path="/tags">
-            <RecommendationTags />
-              </Route>
+              <RecommendationTags />
+            </Route>
             <Route path="/viewCourses">
               <ViewCourses />
             </Route>

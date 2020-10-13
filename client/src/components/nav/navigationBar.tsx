@@ -10,7 +10,7 @@ export const NavigationBar: React.FC = () => {
         <Navbar.Brand>Not UTS</Navbar.Brand>
       </Link>
       <Nav justify className="mr-auto">
-        <Link to="/test" className="nav-link">
+        <Link to="/" className="nav-link">
           Home
         </Link>
         <Link to="/tags" className="nav-link">
@@ -25,11 +25,8 @@ export const NavigationBar: React.FC = () => {
         <Link to="/registration" className="nav-link">
           Sign up
         </Link>
-        <Link to="/test-2" className="nav-link">
+        <Link to="/contactUs" className="nav-link">
           Contact Us
-        </Link>
-        <Link to="/recommendationlist" className="nav-link">
-          Recommendation List (Test)
         </Link>
         <Link to="/admindashboard" className="nav-link">
           Admin

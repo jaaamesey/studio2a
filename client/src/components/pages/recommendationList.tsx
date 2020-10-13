@@ -3,6 +3,7 @@ import '../../res/css/tables.css';
 import { Button, Container, Col, Modal, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 export const RecommendationList: React.FC = () => {
   const [modalState, setModalState] = useState<
@@ -24,10 +25,10 @@ export const RecommendationList: React.FC = () => {
 
   return (
     <div>
-      <button className="back-button">
+      <Link to="/tags" className="btn back-button">
         {' '}
         <FontAwesomeIcon icon={faChevronLeft} size="2x" />
-      </button>
+      </Link>
 
       <Container>
         <Row>
