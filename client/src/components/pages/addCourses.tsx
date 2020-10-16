@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
-import MultiSelect from 'react-multi-select-component';
+import { MultiselectProps, Multiselect } from 'react-bootstrap-multiselect-ts';
 import '../../res/css/addCourses.css';
 // import {
 //   MDBSelect,
@@ -67,10 +67,35 @@ export const AddCourses: React.FC = () => {
           <Form.Control as="select">
             <option>Please Select Relevant Tags</option>
             <option>Flexibility</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Motivation</option>
+            <option>Communication</option>
+            <option>Public Speaking</option>
+            <option>Problem Solving</option>
+            <option>Analytics</option>
+            <option>Creativity</option>
+            <option>Programming Skills</option>
+            <option>Leadership</option>
+            <option>Management</option>
+            <option>Willingness to Learn</option>
+            <option>Customer Service</option>
+            <option>Attention to Detail</option>
+            <option>Empathy</option>
+            <option>Decision Making</option>
+            <option>Organisation</option>
+            <option>Time Management</option>
+            <option>Teamwork</option>
+            <option>Strategic Planning</option>
+            <option>Public Speaking</option>
+            <option>Critical Thinking</option>
+            <option>Mathematics</option>
+            <option>English</option>
+            <option>Biology</option>
+            <option>History</option>
+            <option>Geography</option>
+            <option>Law</option>
+            <option>Economics</option>
+            <option>Business</option>
+            <option>Journalism</option>
           </Form.Control>
         </Form.Group>
       </Form.Row>
