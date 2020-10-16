@@ -3,7 +3,6 @@ import '../../res/css/tags.css';
 import {
   Button,
   Container,
-  Row,
   Card,
   InputGroup,
   FormControl,

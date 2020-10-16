@@ -1,0 +1,23 @@
+.form-div {
+  width: 95%;
+  padding: 2em;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-div button {
+  width: 20%;
+  margin: 1em;
+  margin-left: auto;
+  margin-right: 150px;
+  background-color: #0f4beb;
+  border-radius: 5px;
+}
+
+.form-group {
+  width: 100%;
+}
