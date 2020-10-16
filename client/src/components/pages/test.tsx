@@ -8,7 +8,8 @@ export const TestPage: React.FC = () => {
   React.useEffect(() => {
     axios
       .get('http://127.0.0.1:9000/memes')
-      .then(() => {
+      .then((result) => {
+		console.log(result);
         setResult('Connected to server successfully.');
       })
       .catch((err) => {
