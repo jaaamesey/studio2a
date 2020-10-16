@@ -98,3 +98,7 @@
 .link-course {
   align-self: center;
 }
+
+.modal h5 {
+  text-align: left;
+}

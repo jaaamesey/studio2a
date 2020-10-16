@@ -7,3 +7,5 @@ export { RecommendationTags } from './tags';
 export { RecommendationList } from './recommendationList';
 export { ViewCourses } from './viewCourses';
 export { AddCourses } from './addCourses';
+export { AdminDashboard } from './adminDashboard';
+
