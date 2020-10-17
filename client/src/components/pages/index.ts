@@ -8,4 +8,4 @@ export { RecommendationList } from './recommendationList';
 export { ViewCourses } from './viewCourses';
 export { AddCourses } from './addCourses';
 export { AdminDashboard } from './adminDashboard';
-
+export { ContactUs } from './contactUs';

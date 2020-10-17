@@ -1,5 +1,5 @@
-.form-div-add {
-  width: 95%;
+.form-div-contact-us {
+  width: 70%;
   font-weight: bold;
   padding: 2em;
   border: 1px solid #ccc;
@@ -10,15 +10,19 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.form-div-add h1 {
+.form-div-contact-us h1 {
   padding-bottom: 0.5em;
 }
 
-.form-div-add button {
-  width: 15em;
+.form-div-contact-us h4 {
+  padding-bottom: 0.5em;
+}
+
+.form-div-contact-us button {
+  width: 10em;
   margin: 1em;
   margin-left: auto;
-  margin-right: 150px;
+  margin-right: auto;
   background-color: #0f4beb;
   border-radius: 5px;
 }
