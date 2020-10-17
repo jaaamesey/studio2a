@@ -16,6 +16,7 @@
 
 .form-div input {
   line-height: 2em;
+  width: fit-content;
 }
 
 .firstname-div,

@@ -8,6 +8,8 @@ import {
   FormControl,
 } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export const RecommendationTags: React.FC = () => {
   function GridListComponent(option: {
@@ -44,7 +46,7 @@ export const RecommendationTags: React.FC = () => {
         <Card.Header className="title" as="h4">
           Skills and Attributes
         </Card.Header>
-        <ul className="grid">
+        <Container fluid className="grid">
           <GridListComponent
             id="grid-opt-1"
             tileInfo="Emotional Intelligence"
@@ -78,11 +80,12 @@ export const RecommendationTags: React.FC = () => {
           <GridListComponent id="grid-opt-28" tileInfo="Law" />
           <GridListComponent id="grid-opt-29" tileInfo="Economics" />
           <GridListComponent id="grid-opt-30" tileInfo="Business" />
-        </ul>
+        </Container>
       </Card>
 
       <Link to="/recommendationlist" className="btn btn-primary nextButton">
         View my Course Preference
+        <FontAwesomeIcon icon={faChevronRight} size="2x" />
       </Link>
     </div>
   );

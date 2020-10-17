@@ -75,6 +75,7 @@
 
 .btn-add {
   background-color: #0f4beb;
+  color: white;
   margin-left: 150px;
   width: 150px;
 }
@@ -85,4 +86,12 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.add-tag-form {
+  margin-left: 2em;
+}
+
+.add-tag-btn {
+  background-color: #0f4beb;
 }

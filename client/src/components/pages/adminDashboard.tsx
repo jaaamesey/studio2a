@@ -1,5 +1,16 @@
 import React from 'react';
-import { CardDeck, Card, Button, Table, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import {
+  CardDeck,
+  Card,
+  Button,
+  Table,
+  Row,
+  Col,
+  Form,
+  InputGroup,
+  FormControl,
+} from 'react-bootstrap';
 import '../../res/css/forms.css';
 import '../../res/css/admin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -114,7 +125,9 @@ export const AdminDashboard: React.FC = () => {
       </CardDeck>
       <h2 className="table-title">
         <strong>Courses List:</strong>
-        <Button className="btn-add">Add Course</Button>
+        <Link to="addCourses" className="btn btn-add">
+          Add Course
+        </Link>
       </h2>
       <div className="scrollable">
         <Table bordered className="admin-course-list sticky">
@@ -346,7 +359,25 @@ export const AdminDashboard: React.FC = () => {
           {' '}
           <h2 className="table-title">
             <strong>Tags List:</strong>
-            <Button className="btn-add">Add Tag</Button>
+            <Form>
+              <Form.Row className="add-tag-form">
+                <Col xs="auto">
+                  <Form.Label htmlFor="inlineFormInput" srOnly>
+                    New tag
+                  </Form.Label>
+                  <Form.Control
+                    className="mb-2"
+                    id="inlineFormInput"
+                    placeholder="New tag"
+                  />
+                </Col>
+                <Col xs="auto">
+                  <Button type="submit" className="mb-2 add-tag-btn">
+                    Add
+                  </Button>
+                </Col>
+              </Form.Row>
+            </Form>
           </h2>
           <div className="scrollable">
             <Table bordered className="admin-course-list sticky">

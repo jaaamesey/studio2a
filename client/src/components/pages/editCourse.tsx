@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
-//import { MultiselectProps, Multiselect } from 'react-bootstrap-multiselect-ts';
 import '../../res/css/addCourses.css';
-// import {
-//   MDBSelect,
-//   MDBSelectInput,
-//   MDBSelectOptions,
-//   MDBSelectOption,
-//  } from 'mdbreact';
 
 export const AddCourses: React.FC = () => {
   return (
@@ -22,6 +15,7 @@ export const AddCourses: React.FC = () => {
         <Form.Group as={Col} controlId="formGridFaculty">
           <Form.Label>Faculty:</Form.Label>
           <Form.Control as="select" placeholder="Select Faculty Name">
+            <option>Select Faculty Name</option>
             <option>Arts and Social Sciences</option>
             <option>Business</option>
             <option>Design, Architecture and Building</option>
