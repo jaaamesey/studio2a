@@ -12,10 +12,9 @@ export class UserController {
   ) {}
 
   @Post('testAuth')
-  async testAuth(@Request() req: any, @Res() res: any) {
-    res.header('Access-Control-Allow-Credentials', true).send();
-    console.log(req.headers);
-    return true;
+  async testAuth(@Request() req: any) {
+    const user = await this.sessionService.getUserFromRequest(req);
+    return user;
   }
 
   @Post('login')
@@ -47,7 +46,7 @@ export class UserController {
 
   @Post('logout')
   async logout(@Request() req: any, @Res() res: any) {
-    // Expire all cookies (also should probably delete session token in db)
+    // Expire all cookies
     res
       .header(
         'Set-Cookie',
@@ -58,6 +57,14 @@ export class UserController {
         `USERNAME=null; Path=/; SameSite=Strict; HttpOnly;  Expires=Thu, 1 Jan 1970 00:00:00 GMT`,
       )
       .send();
+
+    // Remove session from database
+    const sessionInfo = this.sessionService.getUsernameAndTokenFromRequest(req);
+    if (!sessionInfo) throw new Error('Invalid session cookies');
+    await this.sessionService.destroySession(
+      sessionInfo.username,
+      sessionInfo.sessionToken,
+    );
   }
 
   @Post('register')

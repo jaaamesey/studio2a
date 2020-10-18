@@ -19,12 +19,15 @@ import {
   ContactUs,
 } from './pages';
 
+import { user } from '../user';
+
+// Send credentials by default if logged in
+axios.defaults.withCredentials = !!user;
+
 // TEST AUTH (remove later)
-axios.post(
-  'http://127.0.0.1:9000/user/testAuth',
-  {},
-  { withCredentials: true },
-);
+if (user) {
+  axios.post('http://127.0.0.1:9000/user/testAuth');
+}
 
 const App: React.FC = () => {
   return (

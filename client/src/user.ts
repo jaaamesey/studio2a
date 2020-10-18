@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 const userStringLS = localStorage.getItem('user');
-export const user = userStringLS ? JSON.parse(userStringLS) : null; // If null, user is not logged in.
+export const user: {
+  username: string;
+  type: 'STUDENT' | 'TEACHER' | 'ADMIN';
+} | null = userStringLS ? JSON.parse(userStringLS) : null; // If null, user is not logged in.
 
 export async function login(username, password) {
   return await axios
@@ -32,11 +35,12 @@ export async function login(username, password) {
 }
 
 export async function logout() {
-  await axios.post(
-    'http://127.0.0.1:9000/user/logout',
-    {},
-    { withCredentials: true },
-  );
+  try {
+    await axios.post('http://127.0.0.1:9000/user/logout');
+  } catch (e) {
+    console.error('Could not log out properly: ' + e);
+  }
+
   localStorage.clear();
   location.replace('/');
 }
