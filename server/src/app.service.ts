@@ -6,6 +6,6 @@ export class AppService {
     return 'memes';
   }
   getHello(): string {
-	return 'Hello world!';
+    return 'Hello world!';
   }
 }

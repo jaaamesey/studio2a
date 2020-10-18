@@ -1,5 +1,5 @@
-export class RegisterDTO { 
-	readonly username: string;
-	readonly email: string;
-    readonly password: string;
+export class RegisterDTO {
+  readonly username: string;
+  readonly email: string;
+  readonly password: string;
 }
