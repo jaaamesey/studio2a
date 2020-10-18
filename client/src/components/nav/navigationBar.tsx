@@ -18,7 +18,7 @@ export const NavigationBar: React.FC = () => {
       <Link to="/">
         <img src={LogoSVG} alt="Not UTS" />
       </Link>
-      <Navbar.Toggle aria-controles="responsive-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav justify className="mr-auto">
           <Link to="/" className="nav-link">
