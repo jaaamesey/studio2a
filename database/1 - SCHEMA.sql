@@ -1,6 +1,6 @@
 -- SCHEMA -- 
 CREATE TABLE "user" (
-    US_Id SERIAL PRIMARY KEY,
+    US_Id SERIAL PRIMARY KEY ,
     US_Name VARCHAR(100) NOT NULL,
     US_Password VARCHAR(100) NOT NULL,
     US_Email VARCHAR(100) UNIQUE NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE Course_Tag
 
 CREATE Table Session
 (
-    SS_Id SERIAL PRIMARY KEY,
+    SS_Id VARCHAR(100) PRIMARY KEY,
     SS_US_User INT NOT NULL,
     SS_Expiry timestamp NOT NULL,
 

@@ -5,6 +5,8 @@ import '../../res/css/nav.css';
 
 import LogoSVG from '../../res/img/uts-logo.svg';
 
+import { user } from '../../user';
+
 export const NavigationBar: React.FC = () => {
   return (
     <Navbar
@@ -30,18 +32,36 @@ export const NavigationBar: React.FC = () => {
           <Link to="/viewCourses" className="nav-link">
             View Courses
           </Link>
-          <Link to="/login" className="nav-link">
-            Login
-          </Link>
-          <Link to="/registration" className="nav-link">
-            Sign up
-          </Link>
           <Link to="/contactUs" className="nav-link">
             Contact Us
           </Link>
-          <Link to="/admindashboard" className="nav-link">
-            Admin
-          </Link>
+          {user?.type === 'ADMIN' && (
+            <Link to="/admindashboard" className="nav-link">
+              Admin
+            </Link>
+          )}
+          {user ? (
+            <Link
+              onClick={(e) => {
+                e.preventDefault();
+                localStorage.clear();
+                location.replace('/');
+              }}
+              to={''}
+              className="nav-link"
+            >
+              Logout ({user.username})
+            </Link>
+          ) : (
+            <>
+              <Link to="/registration" className="nav-link">
+                Sign up
+              </Link>
+              <Link to="/login" className="nav-link">
+                Login
+              </Link>
+            </>
+          )}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
