@@ -6,8 +6,7 @@
   margin: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
 }
 
 .form-div-contact-us h1 {
@@ -24,7 +23,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: #0f4beb;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .form-group {
