@@ -39,7 +39,7 @@
   margin-right: auto;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   animation: transitionIn 0.75s;
   font-family: sans-serif;
 }
@@ -88,7 +88,7 @@
   background-color: #f7f7f7;
   border: 1px solid rgba(0, 0, 0, 0.42);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .tag-title {

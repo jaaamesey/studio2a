@@ -3,6 +3,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../../res/css/nav.css';
 
+import LogoSVG from '../../res/img/uts-logo.svg';
+
 export const NavigationBar: React.FC = () => {
   return (
     <Navbar
@@ -14,7 +16,7 @@ export const NavigationBar: React.FC = () => {
       className="nav-bar"
     >
       <Link to="/">
-        <Navbar.Brand>Not UTS</Navbar.Brand>
+        <img src={LogoSVG} alt="Not UTS" />
       </Link>
       <Navbar.Toggle aria-controles="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
