@@ -45,7 +45,7 @@ export class SessionService {
   }
 
   getUsernameAndTokenFromRequest({ headers: { cookie } }: any) {
-    const cookies: string[] = cookie.split(';');
+    const cookies: string[] = cookie?.split(';') || [];
     let username: string | null = null;
     let sessionToken: string | null = null;
     cookies.forEach((cookie) => {
