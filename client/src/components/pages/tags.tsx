@@ -1,12 +1,6 @@
 import React from 'react';
 import '../../res/css/tags.css';
-import {
-  Button,
-  Container,
-  Card,
-  InputGroup,
-  FormControl,
-} from 'react-bootstrap';
+import { Container, Card, InputGroup, FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -27,25 +21,24 @@ export const RecommendationTags: React.FC = () => {
   return (
     <div>
       <Container>
-        <h3>Search Course Tags:</h3>
+        <h3>Select Course Tags</h3>
 
-        <InputGroup className="search">
-          <InputGroup.Prepend>
-            <InputGroup.Text>Search:</InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl
-            id="inlineFormInputGroup"
-            placeholder="Search your skill preferences..."
-          />
-        </InputGroup>
-
-        <h5>Choose up to 10 interests</h5>
+        <h5>Select up to 10 things that interest you:</h5>
       </Container>
 
       <Card className="card">
         <Card.Header className="title" as="h4">
           Skills and Attributes
         </Card.Header>
+        <InputGroup className="search" style={{ marginTop: 22 }}>
+          <InputGroup.Prepend>
+            <InputGroup.Text>Search</InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl
+            id="inlineFormInputGroup"
+            placeholder="Search your skill preferences..."
+          />
+        </InputGroup>
         <Container fluid className="grid">
           <GridListComponent
             id="grid-opt-1"
@@ -84,8 +77,16 @@ export const RecommendationTags: React.FC = () => {
       </Card>
 
       <Link to="/recommendationlist" className="btn btn-primary nextButton">
-        View my Course Preference
-        <FontAwesomeIcon icon={faChevronRight} size="2x" />
+        <span style={{ marginTop: 2, marginRight: 10, fontSize: '1.1em' }}>
+          View my course recommendations
+        </span>
+        <span>
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            size="2x"
+            style={{ transform: 'scale(0.8)' }}
+          />
+        </span>
       </Link>
     </div>
   );

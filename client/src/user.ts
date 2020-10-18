@@ -18,19 +18,17 @@ export async function login(username, password) {
       },
       { withCredentials: true },
     )
+    .catch((err) => {
+      console.error(err.toString());
+      throw 'Something unexpected happened on the server.';
+    })
     .then((result) => {
-      console.log(result);
-      console.log(result.data.isSuccess);
       if (result.data.isSuccess) {
         localStorage.setItem('user', JSON.stringify(result.data.user));
         location.replace('/');
       } else {
         throw 'Invalid username/password combination.';
       }
-    })
-    .catch((err) => {
-      console.error(err.toString());
-      throw 'Something unexpected happened on the server.';
     });
 }
 
