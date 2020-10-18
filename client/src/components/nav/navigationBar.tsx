@@ -40,6 +40,11 @@ export const NavigationBar: React.FC = () => {
               Admin
             </Link>
           )}
+          {user?.type === 'TEACHER' && (
+            <Link to="/addCourses" className="nav-link">
+              Add Courses
+            </Link>
+          )}
           {user ? (
             <Link
               onClick={(e) => {
