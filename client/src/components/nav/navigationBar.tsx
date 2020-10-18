@@ -5,7 +5,7 @@ import '../../res/css/nav.css';
 
 import LogoSVG from '../../res/img/uts-logo.svg';
 
-import { user } from '../../user';
+import { user, logout } from '../../user';
 
 export const NavigationBar: React.FC = () => {
   return (
@@ -44,8 +44,7 @@ export const NavigationBar: React.FC = () => {
             <Link
               onClick={(e) => {
                 e.preventDefault();
-                localStorage.clear();
-                location.replace('/');
+                logout();
               }}
               to={''}
               className="nav-link"

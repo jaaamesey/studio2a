@@ -11,9 +11,10 @@ export class UserController {
     private readonly sessionService: SessionService,
   ) {}
 
-  @Post('test')
-  async test(test: string) {
-    console.log(test);
+  @Post('testAuth')
+  async testAuth(@Request() req: any, @Res() res: any) {
+    res.header('Access-Control-Allow-Credentials', true).send();
+    console.log(req.headers);
     return true;
   }
 
@@ -29,11 +30,11 @@ export class UserController {
     res
       .header(
         'Set-Cookie',
-        `TOKEN=${sessionToken}; Path=/; SameSite=Strict; HttpOnly`,
+        `TOKEN=${sessionToken}; Path=/; SameSite=Strict; HttpOnly; Expires=Fri, 31 Dec 9999 23:59:59 GMT`,
       ) // "Secure" would need to be added if hosted
       .header(
         'Set-Cookie',
-        `USERNAME=${loginDTO.username}; Path=/; SameSite=Strict; HttpOnly`,
+        `USERNAME=${loginDTO.username}; Path=/; SameSite=Strict; HttpOnly; Expires=Fri, 31 Dec 9999 23:59:59 GMT`,
       ) // "Secure" would need to be added if hosted
       .send({
         isSuccess: true,
@@ -42,6 +43,21 @@ export class UserController {
           type: user.type,
         },
       });
+  }
+
+  @Post('logout')
+  async logout(@Request() req: any, @Res() res: any) {
+    // Expire all cookies (also should probably delete session token in db)
+    res
+      .header(
+        'Set-Cookie',
+        `TOKEN=null; Path=/; SameSite=Strict; HttpOnly; Expires=Thu, 1 Jan 1970 00:00:00 GMT`,
+      )
+      .header(
+        'Set-Cookie',
+        `USERNAME=null; Path=/; SameSite=Strict; HttpOnly;  Expires=Thu, 1 Jan 1970 00:00:00 GMT`,
+      )
+      .send();
   }
 
   @Post('register')

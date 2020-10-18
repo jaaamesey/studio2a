@@ -1,15 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import axios from 'axios';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../res/css/style.css';
 
 import { NavigationBar, Footer } from './nav';
 import {
   HomePage,
   TestPage,
-  TestPage2,
   RegistrationPage,
   LoginPage,
   RecommendationTags,
@@ -19,6 +18,13 @@ import {
   AdminDashboard,
   ContactUs,
 } from './pages';
+
+// TEST AUTH (remove later)
+axios.post(
+  'http://127.0.0.1:9000/user/testAuth',
+  {},
+  { withCredentials: true },
+);
 
 const App: React.FC = () => {
   return (

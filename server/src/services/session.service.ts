@@ -27,6 +27,20 @@ export class SessionService {
     return newSessionId;
   }
 
+  async getUserFromSession(
+    username: string,
+    sessionToken: string,
+  ): Promise<{
+    id: number;
+    type: 'STUDENT' | 'TEACHER' | 'ADMIN';
+    username: string;
+  } | null> {
+    return await db.one(
+      'SELECT us_id AS id, us_type AS type, us_name AS username FROM "user" INNER JOIN session ON us_id = ss_us_user WHERE us_name = $1 AND ss_id = $2',
+      [username, sessionToken],
+    );
+  }
+
   destroySession(): Promise<any> {
     //when a user logs out, they should be assigned a session
     return new Promise((resolve) => {

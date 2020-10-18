@@ -30,3 +30,13 @@ export async function login(username, password) {
       throw 'Something unexpected happened on the server.';
     });
 }
+
+export async function logout() {
+  await axios.post(
+    'http://127.0.0.1:9000/user/logout',
+    {},
+    { withCredentials: true },
+  );
+  localStorage.clear();
+  location.replace('/');
+}
