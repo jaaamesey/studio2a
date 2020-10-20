@@ -14,7 +14,7 @@ export class UserController {
   @Post('testAuth')
   async testAuth(@Request() req: any) {
     const user = await this.sessionService.getUserFromRequest(req);
-    return user;
+    return user ? { ...user, isSuccess: true } : { isSuccess: false };
   }
 
   @Post('login')
@@ -34,7 +34,7 @@ export class UserController {
       .header(
         'Set-Cookie',
         `USERNAME=${loginDTO.username}; Path=/; SameSite=Strict; HttpOnly; Expires=Fri, 31 Dec 9999 23:59:59 GMT`,
-      ) // "Secure" would need to be added if hosted
+      )
       .send({
         isSuccess: true,
         user: {
@@ -54,7 +54,7 @@ export class UserController {
       )
       .header(
         'Set-Cookie',
-        `USERNAME=null; Path=/; SameSite=Strict; HttpOnly;  Expires=Thu, 1 Jan 1970 00:00:00 GMT`,
+        `USERNAME=null; Path=/; SameSite=Strict; HttpOnly; Expires=Thu, 1 Jan 1970 00:00:00 GMT`,
       )
       .send();
 

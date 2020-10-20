@@ -27,7 +27,7 @@ export const NavigationBar: React.FC = () => {
             Home
           </Link>
           <Link to="/tags" className="nav-link">
-            Recommendation Tags
+            Course Recommender
           </Link>
           <Link to="/viewCourses" className="nav-link">
             View Courses
@@ -38,6 +38,11 @@ export const NavigationBar: React.FC = () => {
           {user?.type === 'ADMIN' && (
             <Link to="/admindashboard" className="nav-link">
               Admin
+            </Link>
+          )}
+          {user?.type === 'TEACHER' && (
+            <Link to="/addCourses" className="nav-link">
+              Add Courses
             </Link>
           )}
           {user ? (
@@ -54,7 +59,7 @@ export const NavigationBar: React.FC = () => {
           ) : (
             <>
               <Link to="/registration" className="nav-link">
-                Sign up
+                Sign Up
               </Link>
               <Link to="/login" className="nav-link">
                 Login

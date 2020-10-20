@@ -54,7 +54,7 @@ export const RecommendationList: React.FC = () => {
 
       <Container>
         <h2 className="table-title">
-          <strong>Course Recommendation:</strong>
+          <strong>Recommended courses</strong>
         </h2>
       </Container>
 
@@ -119,7 +119,7 @@ export const RecommendationList: React.FC = () => {
             <Modal.Title>Bachelor of Engineering (Honours)</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h5>Overiew:</h5>
+            <h5>Overview:</h5>
             <p>
               This program is a comprehensive preparation for careers in the
               professional practice of engineering. Students learn to deal with
@@ -168,7 +168,7 @@ export const RecommendationList: React.FC = () => {
             <Modal.Title>Bachelor of Science</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h5>Overiew:</h5>
+            <h5>Overview:</h5>
             <p>
               The Bachelor of Science gives students a solid foundation in
               scientific knowledge and practice while allowing them to
@@ -219,7 +219,7 @@ export const RecommendationList: React.FC = () => {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h5>Overiew:</h5>
+            <h5>Overview:</h5>
             <p>
               This course offers a sound education in all aspects of computing
               science and information technology. It is intended for students
@@ -265,7 +265,7 @@ export const RecommendationList: React.FC = () => {
             <Modal.Title>Bachelor of Information Technology</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h5>Overiew:</h5>
+            <h5>Overview:</h5>
             <p>
               This is a cooperative education scholarship program in computer
               information systems, developed by UTS in cooperation with a group
@@ -315,7 +315,7 @@ export const RecommendationList: React.FC = () => {
             <Modal.Title>Bachelor of Business</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h5>Overiew:</h5>
+            <h5>Overview:</h5>
             <p>
               The Bachelor of Business offers students a sound background in all
               areas of business through eight common core subjects undertaken in

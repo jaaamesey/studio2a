@@ -12,7 +12,7 @@ import '../../res/css/addCourses.css';
 export const AddCourses: React.FC = () => {
   return (
     <Form className="form-div-add">
-      <h1>Add Courses</h1>
+      <h1>Add a course</h1>
       <Form.Row>
         <Form.Group as={Col} controlId="formGridName">
           <Form.Label>Course Name:</Form.Label>
