@@ -4,58 +4,57 @@ import { Row } from 'react-bootstrap';
 import '../../res/css/viewCourses.css';
 import '../../res/css/tables.css';
 
-export const FacultyTab: React.FC = () => {
+export const FacultyTab: React.FC = (props) => {
   return (
     <div>
       <Row className="tab-title">
         <h4>FACULTIES</h4>
       </Row>
       <Row className="tab-faculty">
-        <Link to="/viewCourses/arts-and-social-sciences" className="tab-link">
-          Arts and Social Sciences
-        </Link>
+        <a href="/viewCourses" className="tab-link">
+          All Faculties
+        </a>
       </Row>
       <Row className="tab-faculty">
-        <Link to="/viewCourses/business" className="tab-link">
+        <a href="/viewCourses/arts-and-social-sciences" className="tab-link">
+          Arts and Social Sciences
+        </a>
+      </Row>
+      <Row className="tab-faculty">
+        <a href="/viewCourses/business" className="tab-link">
           Business
-        </Link>
+        </a>
       </Row>
       <Row className="tab-faculty">
         {' '}
-        <Link
-          to="/viewCourses/design-architecture-building"
-          className="tab-link"
-        >
+        <a id={3} href="/viewCourses/design-architecture-building" className="tab-link">
           Design, Architecture and Building
-        </Link>
+        </a>
       </Row>
       <Row className="tab-faculty">
-        <Link to="/viewCourses/engineering-and-it" className="tab-link">
+        <a href="/viewCourses/engineering-and-it" className="tab-link">
           Engineering and IT
-        </Link>
+        </a>
       </Row>
       <Row className="tab-faculty">
-        <Link to="/viewCourses/health" className="tab-link">
+        <a href="/viewCourses/health" className="tab-link">
           Health
-        </Link>
+        </a>
       </Row>
       <Row className="tab-faculty">
-        <Link to="/viewCourses/law" className="tab-link">
+        <a href="/viewCourses/law" className="tab-link">
           Law
-        </Link>
+        </a>
       </Row>
       <Row className="tab-faculty">
-        <Link to="/viewCourses/sciences" className="tab-link">
+        <a href="/viewCourses/sciences" className="tab-link">
           Sciences
-        </Link>
+        </a>
       </Row>
       <Row className="tab-faculty">
-        <Link
-          to="/viewCourses/transdisciplinary-innovation"
-          className="tab-link"
-        >
+        <a href="/viewCourses/transdisciplinary-innovation" className="tab-link">
           Transdisciplinary Innovation
-        </Link>
+        </a>
       </Row>
     </div>
   );

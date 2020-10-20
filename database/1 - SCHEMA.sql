@@ -10,11 +10,7 @@ CREATE TABLE "user" (
 CREATE TABLE Tag
 (
     TG_Id SERIAL PRIMARY KEY,
-    TG_TG_Parent INT NULL,
-    TG_Name VARCHAR(100) NOT NULL,
-
-    FOREIGN KEY(TG_TG_Parent)
-        REFERENCES Tag (TG_Id)
+    TG_Name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE User_Tag
@@ -29,12 +25,26 @@ CREATE TABLE User_Tag
         REFERENCES Tag (TG_Id)  
 );
 
+CREATE TABLE Faculty
+(
+	FA_Id SERIAL PRIMARY KEY,
+	FA_Identifier VARCHAR(100) NOT NULL,
+	FA_DisplayName VARCHAR(100) NOT NULL,
+	FA_Description VARCHAR(2048) NULL
+);
+
 CREATE TABLE Course
 (
     CO_Id SERIAL PRIMARY KEY,
+	CO_FA INT NOT NULL,
+	CO_Code VARCHAR(6) NOT NULL,
     CO_Name VARCHAR(100) NOT NULL,
-    CO_Description VARCHAR(512) NULL,
-    CO_Duration INT NULL
+    CO_Description VARCHAR(2048) NULL,
+	CO_LowestAtar Decimal NULL,
+    CO_Duration Decimal NULL,
+
+	FOREIGN KEY(CO_FA)
+        REFERENCES Faculty (FA_Id)
 );
 
 CREATE TABLE Course_Tag
