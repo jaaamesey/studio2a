@@ -26,12 +26,17 @@ export const NavigationBar: React.FC = () => {
           <Link to="/" className="nav-link">
             Home
           </Link>
-          <Link to="/tags" className="nav-link">
-            Select Tags
-          </Link>
-          <Link to="/recommendationlist" className="nav-link">
-            See Recommendations
-          </Link>
+          {user && (
+            <>
+              <Link to="/tags" className="nav-link">
+                Course Recommender
+              </Link>
+
+              <Link to="/recommendationlist" className="nav-link">
+                My Recommendations
+              </Link>
+            </>
+          )}
           <Link to="/viewCourses" className="nav-link">
             View Courses
           </Link>

@@ -9,28 +9,35 @@ import { GetRecommendations } from '../../recommendations';
 
 export const RecommendationList: React.FC = () => {
   const [courses, setCourses] = useState([]);
-  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState<any>(null);
 
-  useEffect(() => 
-  { 
-    GetRecommendations()
-    .then((result) => {
-      setCourses(result.data);
-    }, () => {
-      console.log("There was a problem retrieving the courses");
-    })
-  },[]);
+  useEffect(() => {
+    GetRecommendations().then(
+      (result) => {
+        setCourses(result.data);
+      },
+      () => {
+        console.log('There was a problem retrieving the courses');
+      },
+    );
+  }, []);
 
-  const recommendationsComponent = courses ? courses.map((course, index) => (
-    <tr id={index+1} onClick={() => setSelectedCourse(course)}>
-      <td>{index+1}</td>
-      <td>{"C" + course.coursecode}</td>
-      <td>{course.title}</td>
-      <td>{course.faculty}</td>
-      <td>{course.lowestatar}</td>
-      <td>{course.duration + " years"}</td>
-    </tr>
-  )) : null;
+  const recommendationsComponent = courses
+    ? courses.map((course: any, index: number) => (
+        <tr
+          id={(index + 1).toString()}
+          key={(index + 1).toString()}
+          onClick={() => setSelectedCourse(course)}
+        >
+          <td>{index + 1}</td>
+          <td>{'C' + course.coursecode}</td>
+          <td>{course.title}</td>
+          <td>{course.faculty}</td>
+          <td>{course.lowestatar}</td>
+          <td>{course.duration + ' years'}</td>
+        </tr>
+      ))
+    : null;
   return (
     <div>
       <Container>
@@ -50,46 +57,50 @@ export const RecommendationList: React.FC = () => {
             <th>Duration (Full Time)</th>
           </tr>
         </thead>
-        <tbody>
-          {recommendationsComponent}
-        </tbody>
+        <tbody>{recommendationsComponent}</tbody>
       </table>
 
-      <br/>
-      <TagsChosen/>
-      <br/>
-      <br/>
+      <br />
+      <TagsChosen />
+      <br />
+      <br />
 
-      {(selectedCourse !== null) && <Container>
-        <Modal show={true} onHide={() => setSelectedCourse(null)}>
-          <Modal.Header closeButton>
-            <Modal.Title>{selectedCourse.title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <h5>Overview:</h5>
-            <p>{selectedCourse.description}</p>
-            <hr />
-            <div className="link-course">
-              <a
-                href={"https://www.handbook.uts.edu.au/courses/c" + selectedCourse.coursecode + ".html"}
-                target="_blank"
-                rel="noreferrer"
+      {selectedCourse !== null && (
+        <Container>
+          <Modal show={true} onHide={() => setSelectedCourse(null)}>
+            <Modal.Header closeButton>
+              <Modal.Title>{selectedCourse.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <h5>Overview:</h5>
+              <p>{selectedCourse.description}</p>
+              <hr />
+              <div className="link-course">
+                <a
+                  href={
+                    'https://www.handbook.uts.edu.au/courses/c' +
+                    selectedCourse.coursecode +
+                    '.html'
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Learn more
+                </a>
+              </div>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button
+                variant="secondary"
+                className="btn btn-default"
+                onClick={() => setSelectedCourse(null)}
               >
-                Learn more
-              </a>
-            </div>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button
-              variant="secondary"
-              className="btn btn-default"
-              onClick={() => setSelectedCourse(null)}
-            >
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      </Container>}
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
+        </Container>
+      )}
     </div>
   );
 };

@@ -5,55 +5,59 @@ import { getAllTags, setTags } from '../../tags';
 import { TagsChosen } from './tagsChosen';
 
 export const RecommendationTags: React.FC = () => {
-  const [tagsToShow, setTagsToShow] = useState([]);
-  const [dbTags, setDbTags] = useState([]);
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [tagsToShow, setTagsToShow] = useState([] as any);
+  const [dbTags, setDbTags] = useState([] as any);
+  const [selectedTags, setSelectedTags] = useState([] as any);
 
-  useEffect(() => 
-  { 
-    getAllTags()
-    .then((result) => {
-      console.log(result);
-      setDbTags(result);
-      
-    }, () => {
-      console.log("There was a problem retrieving the courses");
-    })
-  },[]);
+  useEffect(() => {
+    getAllTags().then(
+      (result) => {
+        console.log(result);
+        setDbTags(result);
+      },
+      () => {
+        console.log('There was a problem retrieving the courses');
+      },
+    );
+  }, []);
 
-  useEffect(() =>
-  {
-    setTagsToShow(dbTags.map(t =>
-      (
+  useEffect(() => {
+    setTagsToShow(
+      dbTags.map((t: any) => (
         <li key={t.id}>
-          <input type="checkbox" id={t.id} onChange={() => toggleTag(t.id)} checked={IsTagIsSelected(t.id)} className="button" />
+          <input
+            type="checkbox"
+            id={t.id}
+            onChange={() => toggleTag(t.id)}
+            checked={IsTagIsSelected(t.id)}
+            className="button"
+          />
           <label htmlFor={t.id}>{t.name}</label>
         </li>
-      )
-    ));
-  }, [dbTags, selectedTags])
+      )),
+    );
+  }, [dbTags, selectedTags]);
 
-  const IsTagIsSelected = (id: number) => { return selectedTags.includes(id); }
+  const IsTagIsSelected = (id: number) => {
+    return selectedTags.includes(id);
+  };
 
   const toggleTag = async (id: number) => {
     let tags = selectedTags.slice();
-    if (IsTagIsSelected(id))
-    {
-      tags = tags.filter(t => t !== id);
-    }
-    else
-    {
+    if (IsTagIsSelected(id)) {
+      tags = tags.filter((t) => t !== id);
+    } else {
       tags.push(id);
     }
     await setSelectedTags(tags);
-  }
+  };
 
   return (
     <div>
       <Container>
-        <br/>
-        <br/>
-        <TagsChosen/>
+        <br />
+        <br />
+        <TagsChosen />
 
         <h3>...Or...</h3>
         <h3>Select A New Set Of Course Tags</h3>
@@ -78,7 +82,10 @@ export const RecommendationTags: React.FC = () => {
           {tagsToShow}
         </Container>
       </Card>
-      <button onClick={() => setTags(selectedTags)} className="btn btn-primary nextButton">
+      <button
+        onClick={() => setTags(selectedTags)}
+        className="btn btn-primary nextButton"
+      >
         Set New Tags
       </button>
     </div>

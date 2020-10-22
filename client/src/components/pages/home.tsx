@@ -6,6 +6,8 @@ import Image1 from '../../res/img/Picture1.png';
 import Image2 from '../../res/img/Picture2.png';
 import Image3 from '../../res/img/Picture3.png';
 
+import { user } from '../../user';
+
 export const HomePage: React.FC = () => {
   return (
     <div>
@@ -28,7 +30,10 @@ export const HomePage: React.FC = () => {
               level. The system will then recommend suitable courses for you.
             </p>
 
-            <Link to="tags" className="btn btn-primary carousel-btn">
+            <Link
+              to={user ? 'tags' : 'login'}
+              className="btn btn-primary carousel-btn"
+            >
               Start Here
             </Link>
           </Carousel.Caption>

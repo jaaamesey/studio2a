@@ -6,7 +6,7 @@ export const user: {
   type: 'STUDENT' | 'TEACHER' | 'ADMIN';
 } | null = userStringLS ? JSON.parse(userStringLS) : null; // If null, user is not logged in.
 
-export async function login(username, password) {
+export async function login(username: string, password: string) {
   return await axios
     .post(
       'http://127.0.0.1:9000/user/login',
