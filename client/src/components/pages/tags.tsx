@@ -1,36 +1,51 @@
 import React, { useState, useEffect } from 'react';
 import '../../res/css/tags.css';
 import { Container, Card, InputGroup, FormControl } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { getAllTags } from '../../tags';
+import { getAllTags, setTags } from '../../tags';
 
 export const RecommendationTags: React.FC = () => {
-  function GridListComponent(option: {
-    id: string | undefined;
-    tileInfo: React.ReactNode;
-  }) {
-    return (
-      <li>
-        <input type="checkbox" id={option.id} className="button" />
-        <label htmlFor={option.id}>{option.tileInfo}</label>
-      </li>
-    );
-  }
-
-  const [tags, setTags] = React.useState([]);
+  const [dbTags, setDbTags] = useState([]);
+  const [selectedTags, setSelectedTags] = useState([]);
+  const [tagsToShow, setTagsToShow] = useState([]);
 
   useEffect(() => 
   { 
     getAllTags()
     .then((result) => {
       console.log(result);
-      setTags(result.map(t => (<GridListComponent id={"grid-opt-"+t.id} tileInfo={t.name}/>)));
+      setDbTags(result);
+      
     }, () => {
       console.log("There was a problem retrieving the courses");
     })
   },[]);
+
+  useEffect(() =>
+  {
+    setTagsToShow(dbTags.map(t =>
+      (
+        <li key={t.id}>
+          <input type="checkbox" id={t.id} onChange={() => toggleTag(t.id)} checked={IsTagIsSelected(t.id)} className="button" />
+          <label htmlFor={t.id}>{t.name}</label>
+        </li>
+      )
+    ));
+  }, [dbTags, selectedTags])
+
+  const IsTagIsSelected = (id: number) => { return selectedTags.includes(id); }
+
+  const toggleTag = async (id: number) => {
+    let tags = selectedTags.slice();
+    if (IsTagIsSelected(id))
+    {
+      tags = tags.filter(t => t !== id);
+    }
+    else
+    {
+      tags.push(id);
+    }
+    await setSelectedTags(tags);
+  }
 
   return (
     <div>
@@ -54,22 +69,12 @@ export const RecommendationTags: React.FC = () => {
           />
         </InputGroup>
         <Container fluid className="grid">
-          {tags}
+          {tagsToShow}
         </Container>
       </Card>
-
-      <Link to="/recommendationlist" className="btn btn-primary nextButton">
-        <span style={{ marginTop: 2, marginRight: 10, fontSize: '1.1em' }}>
-          Set and View my course recommendations
-        </span>
-        <span>
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            size="2x"
-            style={{ transform: 'scale(0.8)' }}
-          />
-        </span>
-      </Link>
+      <button onClick={() => setTags(selectedTags)} className="btn btn-primary nextButton">
+        Set New Tags
+      </button>
     </div>
   );
 };
