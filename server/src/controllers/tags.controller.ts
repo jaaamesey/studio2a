@@ -23,7 +23,6 @@ export class TagsController {
   async SetTags(@Request() req: any, @Res() res: any) {
     const user = JSON.parse(req.body.user) as LoginDTO;
     const tags = req.body.tags as number[];
-    console.log(tags[0]);
-    this.tagsService.SetTagsForUser(user, tags);
+    return this.tagsService.SetTagsForUser(user, tags);
   }
 }

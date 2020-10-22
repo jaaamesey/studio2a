@@ -31,7 +31,8 @@ export async function getTagsForUser(): Promise<any> {
   
 export async function setTags(tags: number[]) {
   let user = localStorage.getItem('user');
-  return await axios
+  setTimeout(function(){ window.location.reload(); }, 1000);
+  await axios
     .post(
       'http://127.0.0.1:9000/tags/SetTags',
       {
@@ -39,17 +40,6 @@ export async function setTags(tags: number[]) {
         tags
       },
       { withCredentials: true },
-    )
-    .catch((err) => {
-      console.error(err.toString());
-      throw 'Something unexpected happened on the server.';
-    })
-    .then((result) => {
-      if (result.data.isSuccess) {
-        
-        location.replace('/');
-      } else {
-        throw 'Invalid username/password combination.';
-      }
-    });
+    );
+  return;
 }
