@@ -15,7 +15,6 @@ export const RecommendationList: React.FC = () => {
   { 
     GetRecommendations()
     .then((result) => {
-      console.log(result);
       setCourses(result.data);
     }, () => {
       console.log("There was a problem retrieving the courses");

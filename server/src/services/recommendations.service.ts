@@ -8,7 +8,6 @@ export class RecommendationsService {
     return new Promise<RecommendationDTO[] | null>(async (resolve) => {
       await db.one('SELECT * FROM "user" WHERE US_Name=$1', [username]) //retrieve the user from the db
       .then(async (result: any) => {
-        console.log(result);
         db.query(
           "SELECT " +
           "	co_code as courseCode, " +

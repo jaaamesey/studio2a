@@ -12,7 +12,7 @@ export const TagsChosen: React.FC = () => {
     getTagsForUser()
     .then((result) => {
       console.log(result);
-	  setTagsToShow(result.map((t, i) => (<Button id={i}className="btn btn-primary tag-btn">{t.name}</Button>)));
+	  setTagsToShow(result.map((t, i) => (<Button key={"tag-list-item-"+i}className="btn btn-primary tag-btn">{t.name}</Button>)));
     }, () => {
       console.log("There was a problem retrieving the courses");
     })
